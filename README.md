@@ -21,6 +21,3 @@ Now, you can visit `localhost:3000` in your browser to view the resume.
 
 Contributions are welcome! If you have any ideas for improvements, feel free to open an issue or a pull request.
 
-## License
-
-This project is open source and available under the MIT License.
