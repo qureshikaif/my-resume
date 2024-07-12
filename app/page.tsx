@@ -3,6 +3,7 @@ import Link from "next/link";
 import { title } from "process";
 import Divider from "./components/Divider";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { url } from "inspector";
 
 const links = [
   {
@@ -11,9 +12,9 @@ const links = [
     url: "https://linkedin.com/in/mohammad-kaif-qureshi-77052a1a5/",
   },
   {
-    title: "Github:",
-    value: "QureshiKaif",
-    url: "https://github.com/qureshikaif",
+    title: "Email:",
+    value: "kaifqureshi.dev@gmail.com",
+    url: "mailto:kaifqureshi.dev@gmail.com",
   },
   {
     title: "Upwork:",
@@ -21,14 +22,14 @@ const links = [
     url: "https://www.upwork.com/freelancers/~01dcfe9b5f254cca69",
   },
   {
-    title: "Email:",
-    value: "kaifqureshi.dev@gmail.com",
-    url: "mailto:kaifqureshi.dev@gmail.com",
-  },
-  {
     title: "Phone:",
     value: "+923182345206",
     url: "tel:+923182345206",
+  },
+  {
+    title: "Github:",
+    value: "QureshiKaif",
+    url: "https://github.com/qureshikaif",
   },
 ];
 
@@ -38,7 +39,7 @@ const education = [
     date: "2022 -- 2026",
     degree: "Bachelor of Information Technology",
     titleOne: "CGPA:",
-    titleOneValue: "3.4",
+    titleOneValue: "3.5",
     titleTwo: "Skills:",
     titleTwoValue: "DSA, OOP, DBMS, Java, C++",
   },
@@ -83,79 +84,66 @@ const certifications = [
     name: "CIT (Web Designing) - MLH",
     url: "https://drive.google.com/file/d/1AK_re7r0VUxKixzOSGxZsxl6J-8vPaWb/view?usp=drive_link",
   },
+  {
+    name: "Coder's Clash - BUCIS",
+    url: "https://drive.google.com/file/d/1gI4aNP7Ytrcosb1pjO3Bix9qSZYdQQX_/view?usp=drivesdk",
+  },
 ];
 
-const skills = [
-  "React.js",
-  "Next.js",
-  "Node.js",
-  "Express.js",
-  "Postgresql",
-  "HTML5",
-  "CSS3",
-  "Javascript",
-  "Typescript",
-  "NoSQL",
-  "Linux",
-  "AWS",
-  "React Native",
-  "Web3/Blockchain",
-  "Solidity",
-  "ERC721 Tokens",
-  "Tailwind CSS",
-  "Next UI",
-  "Shadcn UI",
-  "Bootstrap",
-  "Webflow",
-  "Git",
-  "OOP",
-  "Wordpress Elementor",
-];
+const skills = {
+  devops: ["AWS", "SSL Certification", "CI/CD Tools"],
+  languages: [
+    "JavaScript",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+    "Solidity",
+    "SQL (PostgreSQL, MSSQL)",
+  ],
+  frameworks: [
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "Tailwind CSS",
+    "Webflow",
+    "WordPress Elementor",
+    "React Native",
+  ],
+};
 
 const experiences = [
   {
     name: "Cubicus.io",
-    date: "August 2023 -- Present",
+    date: "July 2023 -- July 2024",
     designation: "Junior Full Stack Developer",
     list: [
-      {
-        one: "Developed beautiful front-end interfaces using React.js and Next.js.",
-        two: "Leveraged Next.js for improved SEO performance.",
-        three:
-          "Built scalable back-end systems using Node.js and Express server.",
-        four: "Successfully deployed applications on AWS EC2.",
-        five: "Managed Postgres databases, deploying on various platforms including Neon DB and AWS RDS.",
-        six: "Worked on blockchain technology, specifically Solidity smart contracts for ERC721 tokens.",
-        seven:
-          "Currently developing a React Native application for both Android and iOS.",
-        eight:
-          "Applied SSL certification on a backend Node server on an EC2 instance using Caddy and nip.io.",
-      },
+      "Developed responsive front-end interfaces using React.js and Next.js, enhancing user experience and engagement.",
+      "Built and maintained scalable back-end systems with Node.js and Express, ensuring high performance and availability.",
+      "Managed Postgres databases, deploying on AWS RDS and Neon DB, optimizing data storage and retrieval.",
     ],
   },
   {
-    name: "Freelance Work",
+    name: "Freelancing",
     date: "March 2023 -- Present",
     designation: "Freelancer",
     list: [
-      {
-        one: "Designed and implemented custom themes and layouts for clients using Webflow and WordPress Elementor.",
-        two: "Ensured responsive design for optimal viewing across multiple devices.",
-        three:
-          "Utilized Webflow’s rich visual interface to create complex animations and interactions.",
-        four: "Implemented triggers and animations to enhance user experience and engagement.",
-        five: "Used timed animations to control the sequence and timing of animations.",
-        six: "Worked with multi-step animations to create complex, layered effects.",
-        seven: "",
-        eight: "",
-      },
+      "Designed and implemented custom themes and layouts for clients using Webflow and WordPress Elementor, ensuring responsive design across devices.",
+      "Utilized Webflow’s visual interface to create complex animations and interactions, improving user engagement.",
+      "Collaborated with clients to understand their needs and deliver tailored web solutions, resulting in high client satisfaction.",
     ],
   },
 ];
 
-const projects = [
+const webProjects = [
   {
-    name: "Script Matix",
+    name: "Summare - AI",
+    description:
+      "Summare.ai is a website designed for article reading. It’s built on Next.js 13 and uses app router for seamless navigation and the Next UI library for a visually appealing and intuitive user interface",
+    url: "https://summare.ai",
+  },
+  {
+    name: "SF Business Solutions",
     description:
       "ScriptMatix is an NFT marketplace for movie clips where users can buy, sell, and mint NFTs. The platform is built using React.js, Next.js, and Solidity smart contracts.",
     url: "https://nft-marketplace-exl5.vercel.app",
@@ -172,11 +160,20 @@ const projects = [
       "Grane Cercle is a website dedicated to providing information about a conference. It has been built using WordPress Elementor with responsive designs",
     url: "https://grandcercle.asban.dev",
   },
+];
+
+const mobileProjects = [
   {
-    name: "Summare. AI",
+    name: "Pixpel.io",
     description:
-      "Summare.ai is a website designed for article reading. It’s built on Next.js 13 and uses app router for seamless navigation and the Next UI library for a visually appealing and intuitive user interface",
-    url: "https://summare.ai",
+      "Pixpel.io is a web3 gaming and cryptocurrency website, providing a platform for gamers and cryptocurrency enthusiasts.",
+    url: "https://pixpel.io",
+  },
+  {
+    name: "ADHD Coach",
+    description:
+      "ADHD Coach is a mobile application designed to help individuals with ADHD manage their daily tasks and improve their productivity.",
+    url: "https://adhdcoach.app",
   },
 ];
 
@@ -205,7 +202,7 @@ export default function Home() {
               >
                 <h1 className="text-xs font-semibold w-1/6">{link.title}</h1>
                 <div className="flex items-center flex-grow space-x-2">
-                  <h1 className="text-xs text-left">{link.value}</h1>
+                  <h1 className="text-xs text-left ">{link.value}</h1>
                   <Link href={link.url} className="text-xs">
                     <FaExternalLinkAlt size={10} />
                   </Link>
@@ -236,10 +233,6 @@ export default function Home() {
                       <span className="font-semibold mr-1">{edu.titleOne}</span>
                       {edu.titleOneValue}
                     </li>
-                    <li className="flex space-x-2 text-xsm">
-                      <span className="font-semibold mr-1">{edu.titleTwo}</span>
-                      {edu.titleTwoValue}
-                    </li>
                   </ul>
                   {index !== education.length - 1 && (
                     <Divider className="my-2 h-[1px]" />
@@ -264,13 +257,36 @@ export default function Home() {
             <Divider className="my-2 h-[2px]" />
             <div>
               <h1 className="uppercase text-sm font-medium my-2">Skills</h1>
-              <ul className="flex gap-y-5 gap-x-5 flex-wrap list-disc ps-5 pe-5">
-                {skills.map((skills, index) => (
-                  <li className="text-xs" key={index}>
-                    {skills}
-                  </li>
-                ))}
-              </ul>
+              <div className="mb-4">
+                <h2 className="text-xs font-semibold">Languages</h2>
+                <ul className="flex gap-y-2 flex-wrap list-disc ps-5 gap-x-5 mt-2">
+                  {skills.languages.map((skill, index) => (
+                    <li className="text-xs" key={index}>
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mb-4">
+                <h2 className="text-xs font-semibold">Framework/Libraries</h2>
+                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
+                  {skills.frameworks.map((skill, index) => (
+                    <li className="text-xs" key={index}>
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mb-4">
+                <h2 className="text-xs font-semibold">DevOps</h2>
+                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
+                  {skills.devops.map((skill, index) => (
+                    <li className="text-xs" key={index}>
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
           <div className="w-1/2 h-full mt-2 px-3">
@@ -283,26 +299,39 @@ export default function Home() {
                     {experience.date} | {experience.designation}
                   </p>
                 </div>
-                {experience.list.map((list, index) => (
-                  <ul key={index} className="text-xs list-disc pl-7">
-                    <li>{list.one}</li>
-                    <li>{list.two}</li>
-                    <li>{list.three}</li>
-                    <li>{list.four}</li>
-                    <li>{list.five}</li>
-                    <li>{list.six}</li>
-                    {list.seven && <li>{list.seven}</li>}
-                    {list.eight && <li>{list.eight}</li>}
-                  </ul>
-                ))}
+                <ul className="text-xs list-disc pl-7">
+                  {experience.list.map((list, index) => (
+                    <li key={index} className="text-xs">
+                      {list}
+                    </li>
+                  ))}
+                </ul>
                 <div className="h-2"></div>
               </div>
             ))}
             <div>
               <div>
                 <h1 className="font-semibold">Projects</h1>
+                <h2 className="text-sm font-semibold mt-2">Web Apps</h2>
                 <ul className="list-disc pl-7 space-y-1">
-                  {projects.map((project, index) => (
+                  {webProjects.map((project, index) => (
+                    <div key={index}>
+                      <li className="text-xs font-medium">
+                        <p className="flex items-center">
+                          {project.name}
+                          <Link href={project.url} className="ml-2">
+                            <FaExternalLinkAlt href={project.url} size={10} />
+                          </Link>
+                        </p>
+                      </li>
+                      <p className="text-xs">{project.description}</p>
+                      <div className="h-2"></div>
+                    </div>
+                  ))}
+                </ul>
+                <h2 className="text-sm font-semibold mt-4">Mobile Apps</h2>
+                <ul className="list-disc pl-7 space-y-1">
+                  {mobileProjects.map((project, index) => (
                     <div key={index}>
                       <li className="text-xs font-medium">
                         <p className="flex items-center">
