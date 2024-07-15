@@ -415,7 +415,7 @@ export default function Home() {
             ))}
             <div>
               <div>
-                <h1 className="font-semibold text-sm mb-2 mt-1">PROJECTS</h1>
+                <h1 className="font-semibold text-sm mb-2 mt-5">PROJECTS</h1>
                 {/* <h2 className="text-sm font-semibold mt-2">Web Apps</h2> */}
                 <ul className="list-disc pl-7 space-y-1">
                   {projects.map((project, index) => (
