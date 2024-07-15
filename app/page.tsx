@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { title } from "process";
 import Divider from "./components/Divider";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { url } from "inspector";
+import { PiGithubLogo, PiGlobe, PiLinkedinLogo, PiPhone } from "react-icons/pi";
+import { MdOutlineMail } from "react-icons/md";
 
 const links = [
   {
@@ -17,10 +17,15 @@ const links = [
     url: "mailto:kaifqureshi.dev@gmail.com",
   },
   {
-    title: "Upwork:",
-    value: "Muhammad Kaif Qureshi",
-    url: "https://www.upwork.com/freelancers/~01dcfe9b5f254cca69",
+    title: "Website:",
+    value: "kaifqureshi.vercel.app",
+    url: "https://kaifqureshi.vercel.app",
   },
+  // {
+  //   title: "Upwork:",
+  //   value: "Muhammad Kaif Qureshi",
+  //   url: "https://www.upwork.com/freelancers/~01dcfe9b5f254cca69",
+  // },
   {
     title: "Phone:",
     value: "+923182345206",
@@ -28,15 +33,67 @@ const links = [
   },
   {
     title: "Github:",
-    value: "QureshiKaif",
+    value: "qureshikaif",
     url: "https://github.com/qureshikaif",
+  },
+];
+
+const linksicon = [
+  {
+    icon: PiLinkedinLogo,
+    value: "Muhammad Kaif Qureshi",
+    url: "https://linkedin.com/in/mohammad-kaif-qureshi-77052a1a5/",
+  },
+  {
+    icon: PiGithubLogo,
+    value: "qureshikaif",
+    url: "https://github.com/qureshikaif",
+  },
+  {
+    icon: MdOutlineMail,
+    value: "kaifqureshi.dev@gmail.com",
+    url: "mailto:kaifqureshi.dev@gmail.com",
+  },
+  {
+    icon: PiGlobe,
+    value: "kaifqureshi.vercel.app",
+    url: "https://kaifqureshi.vercel.app",
+  },
+  {
+    icon: PiPhone,
+    value: "+923182345206",
+    url: "tel:+923182345206",
+  },
+];
+
+const linksicons = [
+  {
+    icon: PiLinkedinLogo,
+    url: "https://linkedin.com/in/mohammad-kaif-qureshi-77052a1a5/",
+  },
+  {
+    icon: PiGithubLogo,
+    url: "https://github.com/qureshikaif",
+  },
+  {
+    icon: MdOutlineMail,
+    url: "mailto:kaifqureshi.dev@gmail.com",
+  },
+  {
+    icon: PiGlobe,
+    url: "https://kaifqureshi.vercel.app",
+  },
+
+  {
+    icon: PiPhone,
+    url: "tel:+923182345206",
   },
 ];
 
 const education = [
   {
     name: "Bahria University, Karachi Campus",
-    date: "2022 -- 2026",
+    date: "2022 - 2026",
     degree: "Bachelor of Information Technology",
     titleOne: "CGPA:",
     titleOneValue: "3.5",
@@ -45,7 +102,7 @@ const education = [
   },
   {
     name: "Fazaia Degree College",
-    date: "2020 -- 2022",
+    date: "2020 - 2022",
     degree: "Computer Science",
     titleOne: "Grade:",
     titleOneValue: "A",
@@ -54,7 +111,7 @@ const education = [
   },
   {
     name: "The Educators",
-    date: "2009 -- 2020",
+    date: "2009 - 2020",
     degree: "Computer Science",
     titleOne: "Grade:",
     titleOneValue: "A",
@@ -98,7 +155,7 @@ const skills = {
     "HTML5",
     "CSS3",
     "Solidity",
-    "SQL (PostgreSQL, MSSQL)",
+    "SQL (PostgreSQL, MSSQL, MYSQL)",
   ],
   frameworks: [
     "React.js",
@@ -106,74 +163,82 @@ const skills = {
     "Node.js",
     "Express.js",
     "Tailwind CSS",
-    "Webflow",
-    "WordPress Elementor",
+    "Bootstrap",
     "React Native",
   ],
+  cms: ["Wordpress", "Webflow"],
+  nosql: ["MongoDB", "Firebase"],
 };
 
 const experiences = [
   {
     name: "Cubicus.io",
-    date: "July 2023 -- July 2024",
-    designation: "Junior Full Stack Developer",
+    date: "July 2023 - July 2024",
+    designation: "Full Stack Developer",
     list: [
       "Developed responsive front-end interfaces using React.js and Next.js, enhancing user experience and engagement.",
       "Built and maintained scalable back-end systems with Node.js and Express, ensuring high performance and availability.",
       "Managed Postgres databases, deploying on AWS RDS and Neon DB, optimizing data storage and retrieval.",
+      "Implemented CI/CD pipelines, improving deployment efficiency and reliability.",
+      "Conducted code reviews and provided mentorship to new developers, promoting best practices and code quality.",
     ],
   },
   {
     name: "Freelancing",
-    date: "March 2023 -- Present",
+    date: "March 2023 - Present",
     designation: "Freelancer",
     list: [
       "Designed and implemented custom themes and layouts for clients using Webflow and WordPress Elementor, ensuring responsive design across devices.",
       "Utilized Webflow’s visual interface to create complex animations and interactions, improving user engagement.",
       "Collaborated with clients to understand their needs and deliver tailored web solutions, resulting in high client satisfaction.",
+      "Optimized website performance and SEO, increasing site traffic and user retention.",
+      "Integrated third-party APIs and services, enhancing website functionality and user experience.",
     ],
   },
 ];
 
-const webProjects = [
-  {
-    name: "Summare - AI",
-    description:
-      "Summare.ai is a website designed for article reading. It’s built on Next.js 13 and uses app router for seamless navigation and the Next UI library for a visually appealing and intuitive user interface",
-    url: "https://summare.ai",
-  },
+const projects = [
+  // {
+  //   name: "Summare - AI",
+  //   url: "https://summare.ai",
+  //   techStack: ["Next.js 13 | ", "App Router | ", "Next UI"],
+  //   description:
+  //     "Summare.ai is a web app for reading articles. It utilizes Next.js 13, App Router, and Next UI to provide seamless navigation and a user-friendly interface.",
+  // },
   {
     name: "SF Business Solutions",
+    url: "https://sfbusinesssolutions.com",
+    techStack: ["Next.js 14 | ", "Shadcn UI | ", "App Router"],
     description:
-      "ScriptMatix is an NFT marketplace for movie clips where users can buy, sell, and mint NFTs. The platform is built using React.js, Next.js, and Solidity smart contracts.",
-    url: "https://nft-marketplace-exl5.vercel.app",
+      "SF Business Solutions provides services like accounting, finance, tax, and bookkeeping. Built with Next.js 14 and Shadcn UI for a professional interface.",
   },
   {
     name: "Nosh NFT",
-    description:
-      "Nosh NFT is an NFT marketplace where users can buy, sell, and mint NFTs, create their own collections. The platform is built using Next.js, and Solidity smart contracts.",
     url: "https://noshnft.com",
-  },
-  {
-    name: "Grande Cercle",
+    techStack: ["Next.js | ", "Solidity | ", "Node.js | ", "Express.js"],
     description:
-      "Grane Cercle is a website dedicated to providing information about a conference. It has been built using WordPress Elementor with responsive designs",
-    url: "https://grandcercle.asban.dev",
+      "Nosh NFT is a platform for trading NFTs. Developed using Next.js, Solidity, Node.js, and Express.js to enable NFT creation and transactions.",
   },
-];
-
-const mobileProjects = [
+  // {
+  //   name: "Grande Cercle",
+  //   url: "https://grandcercle.asban.dev",
+  //   techStack: ["WordPress Elementor | ", "Custom CSS"],
+  //   description:
+  //     "Grande Cercle is a conference information site. Created with WordPress Elementor and custom CSS for responsive and interactive design.",
+  // },
   {
     name: "Pixpel.io",
-    description:
-      "Pixpel.io is a web3 gaming and cryptocurrency website, providing a platform for gamers and cryptocurrency enthusiasts.",
     url: "https://pixpel.io",
+    techStack: ["React Native | ", "Native Base"],
+    description:
+      "Pixpel.io is a web3 gaming and cryptocurrency platform. Built with React Native and Native Base for gaming enthusiasts and crypto traders.",
   },
   {
     name: "ADHD Coach",
+    url: "https://github.com/qureshikaif/adhd-coach-native",
+    techStack: ["React Native | ", "Node.js | ", "Express.js"],
     description:
-      "ADHD Coach is a mobile application designed to help individuals with ADHD manage their daily tasks and improve their productivity.",
-    url: "https://adhdcoach.app",
+      "ADHD Coach is a productivity app for individuals with ADHD. Developed with React Native, Node.js, and Express.js to help manage tasks effectively.",
   },
 ];
 
@@ -184,34 +249,44 @@ export default function Home() {
         <div className="flex justify-between items-center">
           <div className="flex flex-col ">
             <h1 className="text-3xl font-bold">Muhammad Kaif Qureshi</h1>
-            <h2 className="text-2xl font-light">Software Developer</h2>
+            <h2 className="text-xl font-light">Software Developer</h2>
+            {/* <div className="flex items-center space-x-1 mt-1">
+              {linksicons.map((link, index) => (
+                <Link href={link.url} key={index} target="_blank">
+                  <link.icon className="w-5 h-5" />
+                </Link>
+              ))}
+            </div> */}
           </div>
-          <div className="flex flex-col bg-black text-white p-2 font-extrabold text-2xl">
+          <div className="flex flex-col items-center bg-black text-white p-2 font-extrabold text-2xl">
             <h1>M</h1>
             <h1>K</h1>
             <h1>Q</h1>
           </div>
         </div>
-        <Divider className="my-0 h-[2px]" />
+        <Divider className="my-0 h-[1px]" />
+
         <div className="flex">
           <div className="w-1/2 h-full mt-2">
-            {links.map((link, index) => (
+            <h1 className="uppercase text-sm font-semibold mb-1">Socials</h1>
+            {linksicon.map((link, index) => (
               <div
-                className="flex space-x-8 items-center justify-between w-3/4"
+                className="flex space-x-2 items-center justify-between w-3/4"
                 key={index}
               >
-                <h1 className="text-xs font-semibold w-1/6">{link.title}</h1>
+                <link.icon className="w-5 h-5" />
+                {/* <h1 className="text-xs font-semibold w-1/6">{link.title}</h1> */}
                 <div className="flex items-center flex-grow space-x-2">
                   <h1 className="text-xs text-left ">{link.value}</h1>
-                  <Link href={link.url} className="text-xs">
+                  <Link href={link.url} target="_blank" className="text-xs">
                     <FaExternalLinkAlt size={10} />
                   </Link>
                 </div>
               </div>
             ))}
-            <Divider className="my-2 h-[2px]" />
+            <Divider className="my-2 h-[0.5px]" />
             <div className="space-y-1 py-1">
-              <h1 className="uppercase text-sm font-medium">Summary</h1>
+              <h1 className="uppercase text-sm font-semibold">Summary</h1>
               <p className="text-xs">
                 Experienced full-stack software developer with a good track
                 record of addressing complex business requirements and
@@ -219,8 +294,8 @@ export default function Home() {
                 software solutions.
               </p>
             </div>
-            <Divider className="my-2 h-[2px]" />
-            <h1 className="uppercase text-sm font-medium">Education</h1>
+            <Divider className="my-2 h-[0.5px]" />
+            <h1 className="uppercase text-sm font-semibold">Education</h1>
             {education.map((edu, index) => (
               <div className="space-y-4 py-1" key={index}>
                 <div>
@@ -234,15 +309,23 @@ export default function Home() {
                       {edu.titleOneValue}
                     </li>
                   </ul>
-                  {index !== education.length - 1 && (
+                  {/* <ul className="text-xs list-disc my-0.5">
+                    <li className="flex space-x-2 text-xsm">
+                      <span className="font-semibold mr-1">{edu.titleTwo}</span>
+                      {edu.titleTwoValue}
+                    </li>
+                  </ul> */}
+                  {/* {index !== education.length - 1 && (
                     <Divider className="my-2 h-[1px]" />
-                  )}
+                  )} */}
                 </div>
               </div>
             ))}
-            <Divider className="my-2 h-[2px]" />
+            <Divider className="my-2 h-[0.5px]" />
             <div className="py-1">
-              <h1 className="uppercase text-sm font-medium">Certifications</h1>
+              <h1 className="uppercase text-sm font-semibold">
+                Certifications
+              </h1>
               <ul className="list-disc pl-5 space-y-1 mt-2 mb-1">
                 {certifications.map((cert, index) => (
                   <div key={index} className="flex items-center space-x-2">
@@ -254,7 +337,7 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <Divider className="my-2 h-[2px]" />
+            <Divider className="my-2 h-[0.5px]" />
             <div>
               <h1 className="uppercase text-sm font-medium my-2">Skills</h1>
               <div className="mb-4">
@@ -287,10 +370,30 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
+              <div className="mb-4">
+                <h2 className="text-xs font-semibold">CMS/Website Builders</h2>
+                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
+                  {skills.cms.map((skill, index) => (
+                    <li className="text-xs" key={index}>
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mb-4">
+                <h2 className="text-xs font-semibold">NoSQL</h2>
+                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
+                  {skills.nosql.map((skill, index) => (
+                    <li className="text-xs" key={index}>
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
           <div className="w-1/2 h-full mt-2 px-3">
-            <h1 className="uppercase font-semibold">Experience</h1>
+            <h1 className="uppercase font-semibold text-sm">Experience</h1>
             {experiences.map((experience, index) => (
               <div key={index} className="my-1">
                 <div>
@@ -301,7 +404,7 @@ export default function Home() {
                 </div>
                 <ul className="text-xs list-disc pl-7">
                   {experience.list.map((list, index) => (
-                    <li key={index} className="text-xs">
+                    <li key={index} className="mb-1">
                       {list}
                     </li>
                   ))}
@@ -311,41 +414,59 @@ export default function Home() {
             ))}
             <div>
               <div>
-                <h1 className="font-semibold">Projects</h1>
-                <h2 className="text-sm font-semibold mt-2">Web Apps</h2>
+                <h1 className="font-semibold text-sm mb-2 mt-1">PROJECTS</h1>
+                {/* <h2 className="text-sm font-semibold mt-2">Web Apps</h2> */}
                 <ul className="list-disc pl-7 space-y-1">
-                  {webProjects.map((project, index) => (
+                  {projects.map((project, index) => (
                     <div key={index}>
-                      <li className="text-xs font-medium">
-                        <p className="flex items-center">
+                      <li className="text-xs">
+                        <p className="flex items-center font-semibold">
                           {project.name}
-                          <Link href={project.url} className="ml-2">
+                          <Link
+                            href={project.url}
+                            target="_blank"
+                            className="ml-2"
+                          >
                             <FaExternalLinkAlt href={project.url} size={10} />
                           </Link>
                         </p>
+                        <div className="flex">
+                          {project.techStack.map((tech, idx) => (
+                            <p key={idx} className="text-xsm mb-1">
+                              {tech}&nbsp;
+                            </p>
+                          ))}
+                        </div>
+                        <p className="text-xs">{project.description}</p>
                       </li>
-                      <p className="text-xs">{project.description}</p>
                       <div className="h-2"></div>
                     </div>
                   ))}
                 </ul>
-                <h2 className="text-sm font-semibold mt-4">Mobile Apps</h2>
-                <ul className="list-disc pl-7 space-y-1">
+                {/* <h2 className="text-sm font-semibold mt-4">Mobile Apps</h2> */}
+                {/* <ul className="list-disc pl-7 space-y-1">
                   {mobileProjects.map((project, index) => (
                     <div key={index}>
-                      <li className="text-xs font-medium">
-                        <p className="flex items-center">
+                      <li className="text-xs">
+                        <p className="flex items-center font-medium">
                           {project.name}
                           <Link href={project.url} className="ml-2">
                             <FaExternalLinkAlt href={project.url} size={10} />
                           </Link>
                         </p>
+                        <div className="flex">
+                          {project.techStack.map((tech, idx) => (
+                            <p key={idx} className="text-xsm mb-1">
+                              {tech}&nbsp;|&nbsp;
+                            </p>
+                          ))}
+                        </div>
+                        <p className="text-xs">{project.description}</p>
                       </li>
-                      <p className="text-xs">{project.description}</p>
                       <div className="h-2"></div>
                     </div>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
