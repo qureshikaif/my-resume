@@ -8,7 +8,7 @@ The original design of this resume was created by another developer and can be f
 
 ## Project Setup
 
-To get the project up and running, follow these steps:
+To get the project up and running, follow the below steps:
 
 1. Clone the repository: `git clone https://github.com/qureshikaif/my-resume.git`
 2. Navigate into the project directory: `cd my-resume`
@@ -20,4 +20,3 @@ Now, you can visit `localhost:3000` in your browser to view the resume.
 ## Contributing
 
 Contributions are welcome! If you have any ideas for improvements, feel free to open an issue or a pull request.
-
