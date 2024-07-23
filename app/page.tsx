@@ -141,10 +141,10 @@ const certifications = [
     name: "CIT (Web Designing) - MLH",
     url: "https://drive.google.com/file/d/1AK_re7r0VUxKixzOSGxZsxl6J-8vPaWb/view?usp=drive_link",
   },
-  {
-    name: "Coder's Clash - BUCIS",
-    url: "https://drive.google.com/file/d/1gI4aNP7Ytrcosb1pjO3Bix9qSZYdQQX_/view?usp=drivesdk",
-  },
+  // {
+  //   name: "Coder's Clash - BUCIS",
+  //   url: "https://drive.google.com/file/d/1gI4aNP7Ytrcosb1pjO3Bix9qSZYdQQX_/view?usp=drivesdk",
+  // },
 ];
 
 const skills = {
@@ -180,25 +180,42 @@ const experiences = [
     name: "Cubicus.io",
     date: "July 2023 - July 2024",
     designation: "Full Stack Developer",
+    // list: [
+    //   "Developed responsive front-end interfaces using React.js and Next.js, increasing user engagement by 25%.",
+    //   "Built and maintained scalable back-end systems with Node.js and Express, reducing server downtime by 30%.",
+    //   "Managed Postgres databases, deploying on AWS RDS and Neon DB, improving query performance by 40%.",
+    //   "Implemented CI/CD pipelines, improving deployment efficiency and reliability by 50%.",
+    //   "Conducted code reviews and mentored new developers, reducing code-related issues by 35%.",
+    //   "Collaborated with design teams to implement UI/UX improvements, enhancing overall application usability.",
+    // ],
     list: [
-      "Developed responsive front-end interfaces using React.js and Next.js, increasing user engagement by 25%.",
-      "Built and maintained scalable back-end systems with Node.js and Express, reducing server downtime by 30%.",
-      "Managed Postgres databases, deploying on AWS RDS and Neon DB, improving query performance by 40%.",
-      "Implemented CI/CD pipelines, improving deployment efficiency and reliability by 50%.",
-      "Conducted code reviews and mentored new developers, reducing code-related issues by 35%.",
-      "Collaborated with design teams to implement UI/UX improvements, enhancing overall application usability.",
+      "Developed beautiful front-end interfaces using React.js and Next.js.",
+      "Leveraged Next.js for improved SEO performance.",
+      "Built scalable back-end systems using Node.js and Express server.",
+      "Successfully deployed applications on AWS EC2 and Digital Ocean.",
+      "Managed Postgres databases, deploying on various platforms including Neon DB and AWS RDS.",
+      "Worked on blockchain technology, specifically Solidity smart contracts for ERC721 tokens.",
+      "Applied SSL certification on a backend Node server on an EC2 instance using Caddy and nip.io.",
     ],
   },
   {
     name: "Freelancing",
     date: "March 2023 - Present",
     designation: "Freelancer",
+    // list: [
+    //   "Designed and implemented custom themes and layouts for clients using Webflow and WordPress Elementor, boosting client satisfaction by 20%.",
+    //   "Utilized Webflow’s visual interface to create complex animations and interactions, increasing average session duration by 15%.",
+    //   "Collaborated with clients to deliver tailored web solutions, achieving a 95% client retention rate.",
+    //   "Optimized website performance and SEO, increasing site traffic by 30%.",
+    //   "Integrated third-party APIs and services, enhancing website functionality and user experience by 25%.",
+    // ],
     list: [
-      "Designed and implemented custom themes and layouts for clients using Webflow and WordPress Elementor, boosting client satisfaction by 20%.",
-      "Utilized Webflow’s visual interface to create complex animations and interactions, increasing average session duration by 15%.",
-      "Collaborated with clients to deliver tailored web solutions, achieving a 95% client retention rate.",
-      "Optimized website performance and SEO, increasing site traffic by 30%.",
-      "Integrated third-party APIs and services, enhancing website functionality and user experience by 25%.",
+      "Designed and implemented custom themes and layouts for clients using Webflow and WordPress Elementor.",
+      "Ensured responsive design for optimal viewing across multiple devices.",
+      "Utilized Webflow’s rich visual interface to create complex animations and interactions.",
+      "Implemented triggers and animations to enhance user experience and engagement.",
+      "Used timed animations to control the sequence and timing of animations.",
+      "Worked with multi-step animations to create complex, layered effects.",
     ],
   },
 ];
@@ -230,11 +247,11 @@ const projects = [
     url: "https://grandcercle.asban.dev",
     techStack: ["WordPress Elementor | ", "Custom CSS"],
     description:
-      "Grande Cercle is a conference information site. Created with WordPress Elementor and custom CSS for responsive and interactive design. This website is fully responsives for all screen sizes.",
+      "Grande Cercle is a conference information site. Created with WordPress Elementor and custom CSS for responsive and interactive design. This website is fully responsive for all screen sizes.",
   },
   {
     name: "Pixpel.io",
-    url: "https://pixpel.io",
+    url: "https://drive.google.com/file/d/1bstIH9HEFoKuif-Zar26aD6VgCI8Zvir/view?usp=sharing",
     techStack: ["React Native | ", "Native Base"],
     description:
       "Pixpel.io is a web3 gaming and cryptocurrency platform. Built with React Native and Native Base. This project uses Nativewind for styling along with Native Base for UI components.",
@@ -345,7 +362,7 @@ export default function Home() {
             </div>
             <Divider className="my-2 h-[0.5px]" />
             <div>
-              <h1 className="uppercase text-sm font-medium my-2">Skills</h1>
+              <h1 className="uppercase text-sm font-semibold my-2">Skills</h1>
               <div className="mb-4">
                 <h2 className="text-xs font-semibold">Languages</h2>
                 <ul className="flex gap-y-2 flex-wrap list-disc ps-5 gap-x-5 mt-2">
@@ -414,13 +431,13 @@ export default function Home() {
               <div key={index} className="my-1">
                 <div>
                   <h1 className="text-xs font-semibold">{experience.name}</h1>
-                  <p className="text-xs mb-1">
+                  <p className="text-[0.7rem] mb-1">
                     {experience.date} | {experience.designation}
                   </p>
                 </div>
                 <ul className="text-xs list-disc pl-7">
                   {experience.list.map((list, index) => (
-                    <li key={index} className="mb-1">
+                    <li key={index} className="mb-[0.15rem]">
                       {list}
                     </li>
                   ))}
@@ -430,7 +447,7 @@ export default function Home() {
             ))}
             <div>
               <div>
-                <h1 className="font-semibold text-sm mb-2 mt-5">PROJECTS</h1>
+                <h1 className="font-semibold text-sm mb-2 mt-3">PROJECTS</h1>
                 {/* <h2 className="text-sm font-semibold mt-2">Web Apps</h2> */}
                 <ul className="list-disc pl-7 space-y-1">
                   {projects.map((project, index) => (
