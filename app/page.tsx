@@ -54,38 +54,14 @@ const linksicon = [
     value: "kaifqureshi.dev@gmail.com",
     url: "mailto:kaifqureshi.dev@gmail.com",
   },
-  {
-    icon: PiGlobe,
-    value: "kaifqureshi.vercel.app",
-    url: "https://kaifqureshi.vercel.app",
-  },
+  // {
+  //   icon: PiGlobe,
+  //   value: "kaifqureshi.vercel.app",
+  //   url: "https://kaifqureshi.vercel.app",
+  // },
   {
     icon: PiPhone,
     value: "+923182345206",
-    url: "tel:+923182345206",
-  },
-];
-
-const linksicons = [
-  {
-    icon: PiLinkedinLogo,
-    url: "https://linkedin.com/in/mohammad-kaif-qureshi-77052a1a5/",
-  },
-  {
-    icon: PiGithubLogo,
-    url: "https://github.com/qureshikaif",
-  },
-  {
-    icon: MdOutlineMail,
-    url: "mailto:kaifqureshi.dev@gmail.com",
-  },
-  {
-    icon: PiGlobe,
-    url: "https://kaifqureshi.vercel.app",
-  },
-
-  {
-    icon: PiPhone,
     url: "tel:+923182345206",
   },
 ];
@@ -190,10 +166,10 @@ const experiences = [
     // ],
     list: [
       "Developed beautiful front-end interfaces using React.js and Next.js.",
-      "Leveraged Next.js for improved SEO performance.",
+      // "Leveraged Next.js for improved SEO performance.",
       "Built scalable back-end systems using Node.js and Express server.",
       "Successfully deployed applications on AWS EC2 and Digital Ocean.",
-      "Managed Postgres databases, deploying on various platforms including Neon DB and AWS RDS.",
+      // "Managed Postgres databases, deploying on various platforms including Neon DB and AWS RDS.",
       "Worked on blockchain technology, specifically Solidity smart contracts for ERC721 tokens.",
       "Applied SSL certification on a backend Node server on an EC2 instance using Caddy and nip.io.",
     ],
@@ -214,8 +190,8 @@ const experiences = [
       "Ensured responsive design for optimal viewing across multiple devices.",
       "Utilized Webflow’s rich visual interface to create complex animations and interactions.",
       "Implemented triggers and animations to enhance user experience and engagement.",
-      "Used timed animations to control the sequence and timing of animations.",
-      "Worked with multi-step animations to create complex, layered effects.",
+      // "Used timed animations to control the sequence and timing of animations.",
+      // "Worked with multi-step animations to create complex, layered effects.",
     ],
   },
 ];
@@ -268,239 +244,190 @@ const projects = [
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center">
-      <section className="bg-gray-100 p-10 min-h-screen w-1/2 m-10 rounded-xl print:w-full print:m-0">
+      <section className="bg-gray-100 p-16 min-h-screen w-1/2 m-10 rounded-xl print:w-full print:m-0">
         <div className="flex justify-between items-center">
-          <div className="flex flex-col ">
-            <h1 className="text-3xl font-bold">Muhammad Kaif Qureshi</h1>
-            <h2 className="text-xl font-light">Software Developer</h2>
-            {/* <div className="flex items-center space-x-1 mt-1">
-              {linksicons.map((link, index) => (
-                <Link href={link.url} key={index} target="_blank">
-                  <link.icon className="w-5 h-5" />
-                </Link>
-              ))}
-            </div> */}
-          </div>
-          <div className="flex flex-col items-center bg-black text-white p-2 font-extrabold text-2xl">
-            <h1>M</h1>
-            <h1>K</h1>
-            <h1>Q</h1>
+          <div className="flex flex-col w-full">
+            <h1 className="text-3xl font-bold text-center w-full">
+              Muhammad Kaif Qureshi
+            </h1>
+            {/* <h2 className="text-xl font-light text-center">
+              Software Developer
+            </h2> */}
           </div>
         </div>
-        <Divider className="my-0 h-[1px]" />
-
-        <div className="flex">
-          <div className="w-1/2 h-full mt-2">
-            <h1 className="uppercase text-sm font-semibold mb-1">Socials</h1>
-            {linksicon.map((link, index) => (
-              <div
-                className="flex space-x-2 items-center justify-between w-3/4"
-                key={index}
-              >
-                <link.icon className="w-5 h-5" />
-                {/* <h1 className="text-xs font-semibold w-1/6">{link.title}</h1> */}
-                <div className="flex items-center flex-grow space-x-2">
-                  <h1 className="text-xs text-left ">{link.value}</h1>
-                  <Link href={link.url} target="_blank" className="text-xs">
-                    <FaExternalLinkAlt size={10} />
-                  </Link>
-                </div>
+        <Divider className="my-3 h-[1px]" />
+        <div className="flex justify-between">
+          {linksicon.map((link, index) => (
+            <div
+              className="flex flex-row space-x-2 items-center justify-between"
+              key={index}
+            >
+              <link.icon className="w-5 h-5" />
+              <div className="flex items-center flex-grow space-x-2">
+                <h1 className="text-xsm">{link.value}</h1>
+                {/* <Link href={link.url} target="_blank" className="text-xs">
+                  <FaExternalLinkAlt size={10} />
+                </Link> */}
               </div>
-            ))}
-            <Divider className="my-2 h-[0.5px]" />
-            <div className="space-y-1 py-1">
-              <h1 className="uppercase text-sm font-semibold">Summary</h1>
-              <p className="text-xs">
-                Experienced full-stack software developer with a good track
-                record of addressing complex business requirements and
-                overcoming challenges to deliver polished and user-friendly
-                software solutions.
-              </p>
             </div>
-            <Divider className="my-2 h-[0.5px]" />
-            <h1 className="uppercase text-sm font-semibold">Education</h1>
-            {education.map((edu, index) => (
-              <div className="space-y-4 py-1" key={index}>
-                <div>
-                  <h1 className="text-xs font-semibold">{edu.name}</h1>
-                  <p className="text-xsm">
-                    {edu.date} | {edu.degree}
-                  </p>
-                  <ul className="text-xs list-disc my-0.5">
-                    <li className="flex space-x-2 text-xsm">
-                      <span className="font-semibold mr-1">{edu.titleOne}</span>
-                      {edu.titleOneValue}
-                    </li>
-                  </ul>
-                  {/* <ul className="text-xs list-disc my-0.5">
-                    <li className="flex space-x-2 text-xsm">
-                      <span className="font-semibold mr-1">{edu.titleTwo}</span>
-                      {edu.titleTwoValue}
-                    </li>
-                  </ul> */}
-                  {/* {index !== education.length - 1 && (
-                    <Divider className="my-2 h-[1px]" />
-                  )} */}
-                </div>
-              </div>
-            ))}
-            <Divider className="my-2 h-[0.5px]" />
-            <div className="py-1">
-              <h1 className="uppercase text-sm font-semibold">
-                Certifications
-              </h1>
-              <ul className="list-disc pl-5 space-y-1 mt-2 mb-1">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-center space-x-2">
-                    <li className="text-xs">{cert.name}</li>
-                    <Link href={cert.url}>
-                      <FaExternalLinkAlt size={10} />
-                    </Link>
-                  </div>
+          ))}
+        </div>
+        <Divider className="my-3 h-[0.5px]" />
+
+        <div className="w-full h-full mt-2">
+          <div className="py-1">
+            <h1 className="uppercase text-sm font-semibold">Summary</h1>
+            <Divider className="mb-2 h-[0.5px]" />
+            <p className="text-xs">
+              Experienced full-stack software developer with a good track record
+              of addressing complex business requirements and overcoming
+              challenges to deliver polished and user-friendly software
+              solutions.
+            </p>
+          </div>
+          <div>
+            <h1 className="uppercase text-sm font-semibold mt-3">Skills</h1>
+            <Divider className="mb-2 h-[0.5px]" />
+            <div className="mb-2 flex">
+              <h2 className="text-xs font-semibold">Languages:</h2>
+              <ul className="flex gap-y-2 flex-wrap ps-2">
+                {skills.languages.map((skill, index) => (
+                  <li className="text-xs" key={index}>
+                    {skill} |&nbsp;
+                  </li>
                 ))}
               </ul>
             </div>
-            <Divider className="my-2 h-[0.5px]" />
-            <div>
-              <h1 className="uppercase text-sm font-semibold my-2">Skills</h1>
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">Languages</h2>
-                <ul className="flex gap-y-2 flex-wrap list-disc ps-5 gap-x-5 mt-2">
-                  {skills.languages.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">Framework/Libraries</h2>
-                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
-                  {skills.frameworks.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">DevOps</h2>
-                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
-                  {skills.devops.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">CMS/Website Builders</h2>
-                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
-                  {skills.cms.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">NoSQL</h2>
-                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
-                  {skills.nosql.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">Version Control</h2>
-                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
-                  {skills.versioncontrol.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            {/* <div className="mb-2 flex">
+              <h2 className="text-xs font-semibold">Framework/Libraries:</h2>
+              <ul className="flex gap-y-2 flex-wrap ps-2">
+                {skills.frameworks.map((skill, index) => (
+                  <li className="text-xs" key={index}>
+                    {skill} |&nbsp;
+                  </li>
+                ))}
+              </ul>
+            </div> */}
+            <div className="mb-2 flex">
+              <h2 className="text-xs font-semibold">DevOps:</h2>
+              <ul className="flex gap-y-2 flex-wrap ps-2">
+                {skills.devops.map((skill, index) => (
+                  <li className="text-xs" key={index}>
+                    {skill} |&nbsp;
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="mb-2 flex">
+              <h2 className="text-xs font-semibold">CMS/Website Builders:</h2>
+              <ul className="flex gap-y-2 flex-wrap ps-2">
+                {skills.cms.map((skill, index) => (
+                  <li className="text-xs" key={index}>
+                    {skill} |&nbsp;
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="mb-2 flex">
+              <h2 className="text-xs font-semibold">NoSQL:</h2>
+              <ul className="flex gap-y-2 flex-wrap ps-2">
+                {skills.nosql.map((skill, index) => (
+                  <li className="text-xs" key={index}>
+                    {skill} |&nbsp;
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="mb-2 flex">
+              <h2 className="text-xs font-semibold">Version Control:</h2>
+              <ul className="flex gap-y-2 flex-wrap ps-2">
+                {skills.versioncontrol.map((skill, index) => (
+                  <li className="text-xs" key={index}>
+                    {skill} |&nbsp;
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-          <div className="w-1/2 h-full mt-2 px-3">
-            <h1 className="uppercase font-semibold text-sm">Experience</h1>
-            {experiences.map((experience, index) => (
-              <div key={index} className="my-1">
-                <div>
-                  <h1 className="text-xs font-semibold">{experience.name}</h1>
-                  <p className="text-[0.7rem] mb-1">
-                    {experience.date} | {experience.designation}
-                  </p>
+          <h1 className="uppercase font-semibold text-sm mt-3">Experience</h1>
+          <Divider className="mb-2 h-[0.5px]" />
+
+          {experiences.map((experience, index) => (
+            <div key={index} className="my-1">
+              <div className="flex items-center justify-between">
+                <h1 className="text-xs font-semibold">{experience.name}</h1>
+                <p className="text-xsm mb-1">
+                  {experience.date} | {experience.designation}
+                </p>
+              </div>
+              <ul className="text-xs list-disc pl-7">
+                {experience.list.map((list, index) => (
+                  <li key={index} className="mb-[0.15rem]">
+                    {list}
+                  </li>
+                ))}
+              </ul>
+              <div className="h-2"></div>
+            </div>
+          ))}
+          <h1 className="uppercase text-sm font-semibold mt-3">Education</h1>
+          <Divider className="mb-2 h-[0.5px]" />
+          {education.map((edu, index) => (
+            <div className="space-y-4 py-1" key={index}>
+              <div className="flex items-center justify-between">
+                <h1 className="text-xs font-semibold">{edu.name}</h1>
+                <p className="text-xsm ml-2">{edu.date}</p>
+              </div>
+            </div>
+          ))}
+          <div className="py-1">
+            <h1 className="uppercase text-sm font-semibold mt-3">
+              Certifications
+            </h1>
+            <Divider className="mb-2 h-[0.5px]" />
+            <ul className="list-disc pl-5 space-y-1 mt-3 mb-1">
+              {certifications.map((cert, index) => (
+                <div key={index} className="flex items-center space-x-2">
+                  <li className="text-xs">{cert.name}</li>
+                  <Link href={cert.url}>
+                    <FaExternalLinkAlt size={10} />
+                  </Link>
                 </div>
-                <ul className="text-xs list-disc pl-7">
-                  {experience.list.map((list, index) => (
-                    <li key={index} className="mb-[0.15rem]">
-                      {list}
-                    </li>
-                  ))}
-                </ul>
-                <div className="h-2"></div>
-              </div>
-            ))}
+              ))}
+            </ul>
+          </div>
+
+          <div>
             <div>
-              <div>
-                <h1 className="font-semibold text-sm mb-2 mt-3">PROJECTS</h1>
-                {/* <h2 className="text-sm font-semibold mt-2">Web Apps</h2> */}
-                <ul className="list-disc pl-7 space-y-1">
-                  {projects.map((project, index) => (
-                    <div key={index}>
-                      <li className="text-xs">
-                        <p className="flex items-center font-semibold">
-                          {project.name}
-                          <Link
-                            href={project.url}
-                            target="_blank"
-                            className="ml-2"
-                          >
-                            <FaExternalLinkAlt href={project.url} size={10} />
-                          </Link>
-                        </p>
-                        <div className="flex">
-                          {project.techStack.map((tech, idx) => (
-                            <p key={idx} className="text-xsm mb-1">
-                              {tech}&nbsp;
-                            </p>
-                          ))}
-                        </div>
-                        <p className="text-xs">{project.description}</p>
-                      </li>
-                      <div className="h-2"></div>
-                    </div>
-                  ))}
-                </ul>
-                {/* <h2 className="text-sm font-semibold mt-4">Mobile Apps</h2> */}
-                {/* <ul className="list-disc pl-7 space-y-1">
-                  {mobileProjects.map((project, index) => (
-                    <div key={index}>
-                      <li className="text-xs">
-                        <p className="flex items-center font-medium">
-                          {project.name}
-                          <Link href={project.url} className="ml-2">
-                            <FaExternalLinkAlt href={project.url} size={10} />
-                          </Link>
-                        </p>
-                        <div className="flex">
-                          {project.techStack.map((tech, idx) => (
-                            <p key={idx} className="text-xsm mb-1">
-                              {tech}&nbsp;|&nbsp;
-                            </p>
-                          ))}
-                        </div>
-                        <p className="text-xs">{project.description}</p>
-                      </li>
-                      <div className="h-2"></div>
-                    </div>
-                  ))}
-                </ul> */}
-              </div>
+              <h1 className="font-semibold text-sm mt-3">PROJECTS</h1>
+              <Divider className="mb-2 h-[0.5px]" />
+              <ul className="list-disc pl-7 space-y-1">
+                {projects.map((project, index) => (
+                  <div key={index}>
+                    <li className="text-xs">
+                      <p className="flex items-center font-semibold">
+                        {project.name}
+                        <Link
+                          href={project.url}
+                          target="_blank"
+                          className="ml-2"
+                        >
+                          <FaExternalLinkAlt href={project.url} size={10} />
+                        </Link>
+                      </p>
+                      {/* <div className="flex">
+                        {project.techStack.map((tech, idx) => (
+                          <p key={idx} className="text-xsm mb-1">
+                            {tech}&nbsp;
+                          </p>
+                        ))}
+                      </div> */}
+                      <p className="text-xs">{project.description}</p>
+                    </li>
+                    <div className="h-2"></div>
+                  </div>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
