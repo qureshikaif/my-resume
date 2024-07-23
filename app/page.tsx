@@ -125,14 +125,14 @@ const certifications = [
     name: "Introduction to front end development - Coursera",
     url: "https://www.coursera.org/account/accomplishments/verify/FYDQ4CYEZ6GT",
   },
-  {
-    name: "Theoretical understanding of HTML - SoloLearn",
-    url: "https://www.sololearn.com/Certificate/CT-AQDIYOG4/png",
-  },
-  {
-    name: "Theoretical understanding of CSS - SoloLearn",
-    url: "https://www.sololearn.com/Certificate/CT-6DY9L5PF/png",
-  },
+  // {
+  //   name: "Theoretical understanding of HTML - SoloLearn",
+  //   url: "https://www.sololearn.com/Certificate/CT-AQDIYOG4/png",
+  // },
+  // {
+  //   name: "Theoretical understanding of CSS - SoloLearn",
+  //   url: "https://www.sololearn.com/Certificate/CT-6DY9L5PF/png",
+  // },
   {
     name: "Elementary Programming With C - Aptech",
     url: "https://drive.google.com/file/d/1RMOlZN87uEfXgwaA2011Ld2M8OIyCU2e/view?usp=drive_link",
@@ -165,9 +165,14 @@ const skills = {
     "Tailwind CSS",
     "Bootstrap",
     "React Native",
+    "Redux Toolkit",
+    "Zustand",
+    "Shadcn UI",
+    "Next UI",
   ],
   cms: ["Wordpress", "Webflow"],
   nosql: ["MongoDB", "Firebase"],
+  versioncontrol: ["Github", "Bitbucket", "Gitlab"],
 };
 
 const experiences = [
@@ -215,32 +220,32 @@ const projects = [
   },
   {
     name: "Nosh NFT",
-    url: "https://noshnft.com",
+    url: "https://noshnft.vercel.app",
     techStack: ["Next.js | ", "Solidity | ", "Node.js | ", "Express.js"],
     description:
       "Nosh NFT is a platform for trading NFTs. Developed using Next.js, Solidity, Node.js, and Express.js to enable NFT creation and transactions.",
   },
-  // {
-  //   name: "Grande Cercle",
-  //   url: "https://grandcercle.asban.dev",
-  //   techStack: ["WordPress Elementor | ", "Custom CSS"],
-  //   description:
-  //     "Grande Cercle is a conference information site. Created with WordPress Elementor and custom CSS for responsive and interactive design.",
-  // },
+  {
+    name: "Grande Cercle",
+    url: "https://grandcercle.asban.dev",
+    techStack: ["WordPress Elementor | ", "Custom CSS"],
+    description:
+      "Grande Cercle is a conference information site. Created with WordPress Elementor and custom CSS for responsive and interactive design. This website is fully responsives for all screen sizes.",
+  },
   {
     name: "Pixpel.io",
     url: "https://pixpel.io",
     techStack: ["React Native | ", "Native Base"],
     description:
-      "Pixpel.io is a web3 gaming and cryptocurrency platform. Built with React Native and Native Base for gaming enthusiasts and crypto traders.",
+      "Pixpel.io is a web3 gaming and cryptocurrency platform. Built with React Native and Native Base. This project uses Nativewind for styling along with Native Base for UI components.",
   },
-  {
-    name: "ADHD Coach",
-    url: "https://github.com/qureshikaif/adhd-coach-native",
-    techStack: ["React Native | ", "Node.js | ", "Express.js"],
-    description:
-      "ADHD Coach is a productivity app for individuals with ADHD. Developed with React Native, Node.js, and Express.js to help manage tasks effectively.",
-  },
+  // {
+  //   name: "ADHD Coach",
+  //   url: "https://github.com/qureshikaif/adhd-coach-native",
+  //   techStack: ["React Native | ", "Node.js | ", "Express.js"],
+  //   description:
+  //     "ADHD Coach is a productivity app for individuals with ADHD. Developed with React Native, Node.js, and Express.js to help manage tasks effectively.",
+  // },
 ];
 
 export default function Home() {
@@ -391,6 +396,16 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
+              <div className="mb-4">
+                <h2 className="text-xs font-semibold">Version Control</h2>
+                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
+                  {skills.versioncontrol.map((skill, index) => (
+                    <li className="text-xs" key={index}>
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
           <div className="w-1/2 h-full mt-2 px-3">
@@ -399,7 +414,7 @@ export default function Home() {
               <div key={index} className="my-1">
                 <div>
                   <h1 className="text-xs font-semibold">{experience.name}</h1>
-                  <p className="text-xsm mb-1">
+                  <p className="text-xs mb-1">
                     {experience.date} | {experience.designation}
                   </p>
                 </div>
