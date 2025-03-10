@@ -166,7 +166,7 @@ const projects = [
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center">
-      <section className="bg-gray-100 p-14 min-h-screen w-1/2 m-10 rounded-xl print:w-full print:m-0">
+      <section className="bg-gray-100 p-14 min-h-screen w-1/2 m-10 rounded-xl print:w-full print:m-0 print:bg-white">
         <div className="flex justify-between items-center">
           <div className="flex flex-col w-full">
             <h1 className="text-3xl font-bold text-center w-full">
