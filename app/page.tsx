@@ -84,14 +84,7 @@ const certifications = [
 const skills = {
   languages: ["JavaScript", "TypeScript"],
   sql: ["PostgreSQL", "MSSQL", "MySQL"],
-  frameworks: [
-    "Expo",
-    "Redux Toolkit",
-    "Zustand",
-    "React Hook Form",
-    "Reanimated",
-    "Tanstack Query",
-  ],
+  frameworks: ["React.js", "Next.js", "Node.js", "Express.js"],
   nosql: ["MongoDB", "Firebase"],
   versioncontrol: ["Github", "Bitbucket", "Gitlab"],
 };
@@ -110,7 +103,7 @@ const experiences = [
   {
     name: "Cubicus.io",
     date: "July 2023 - July 2024",
-    designation: "Full Stack Developer",
+    designation: "MERN Stack Developer",
     list: [
       "Integrated a frontend application with secure backend APIs for real-time financial data and interactive charts.",
       "Developed cryptocurrency graphs and statistics features, ensuring optimized performance for large data sets.",
@@ -135,10 +128,10 @@ const projects = [
     url: "https://drive.google.com/file/d/1bstIH9HEFoKuif-Zar26aD6VgCI8Zvir/view?usp=sharing",
     techStack: ["React Native | ", "Native Base"],
     description:
-      "A web3 gaming and cryptocurrency platform using Nativewind, Native Base UI, and React Native.",
+      "A web3 gaming and cryptocurrency platform built using React.js, TailwindCSS, and Redux for state management.",
   },
   {
-    name: "Bunny Books",
+    name: "SF Business Solutions",
     url: "https://github.com/qureshikaif/adhd-coach-native",
     techStack: [
       "React Native | ",
@@ -147,10 +140,10 @@ const projects = [
       "Zod",
     ],
     description:
-      "Rabbitry management app powered by Reanimated, Gesture Handler, React Navigation, and stylesheet-based UI.",
+      "SF Business Solutions is a website built with Next.js using App Router and Shadcn UI library for a consultancy firm. ",
   },
   {
-    name: "Beam Fitness",
+    name: "Nosh NFT",
     url: "https://github.com/qureshikaif/adhd-coach-native",
     techStack: [
       "Expo | ",
@@ -160,20 +153,20 @@ const projects = [
       "Zod",
     ],
     description:
-      "Fitness app built with Expo, Gorhom BottomSheets, and robust form/data handling via React Hook Form and TanStack Query.",
+      "Nosh NFT is an NFT marketplace built with Next.js, Node.js, Solidity and PostgreSQL for minting and selling NFTs.",
   },
 ];
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center">
-      <section className="bg-gray-100 p-14 min-h-screen w-1/2 m-10 rounded-xl print:w-full print:m-0">
+      <section className="bg-gray-100 p-14 min-h-screen w-1/2 m-10 rounded-xl print:w-full print:m-0 print:bg-white">
         <div className="flex justify-between items-center">
           <div className="flex flex-col w-full">
             <h1 className="text-3xl font-bold text-center w-full">
               Muhammad Kaif Qureshi
             </h1>
             <h2 className="text-xl font-light text-center">
-              React Native Developer
+              MERN Stack Developer
             </h2>
           </div>
         </div>
@@ -200,7 +193,7 @@ export default function Home() {
             <h1 className="uppercase text-sm font-semibold">Summary</h1>
             <Divider className="mb-2 h-[0.5px]" />
             <p className="text-xs">
-              Accomplished React Native developer with a proven ability to
+              Accomplished MERN Stack developer with a proven ability to
               transform complex business requirements into high-performance,
               user-friendly applications. Adept at optimizing code, designing
               intuitive UIs, and collaborating with cross-functional teams to
