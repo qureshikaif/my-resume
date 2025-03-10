@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Divider from "./components/Divider";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -79,11 +78,10 @@ const linksicons = [
     icon: MdOutlineMail,
     url: "mailto:kaifqureshi.dev@gmail.com",
   },
-  {
-    icon: PiGlobe,
-    url: "https://kaifqureshi.vercel.app",
-  },
-
+  // {
+  //   icon: PiGlobe,
+  //   url: "https://kaifqureshi.vercel.app",
+  // },
   {
     icon: PiPhone,
     url: "tel:+923182345206",
@@ -109,15 +107,15 @@ const education = [
     titleTwo: "Skills:",
     titleTwoValue: "C, Linux, Networking",
   },
-  {
-    name: "The Educators",
-    date: "2009 - 2020",
-    degree: "Computer Science",
-    titleOne: "Grade:",
-    titleOneValue: "A",
-    titleTwo: "Skills:",
-    titleTwoValue: "GW BASIC, MS Office",
-  },
+  // {
+  //   name: "The Educators",
+  //   date: "2009 - 2020",
+  //   degree: "Computer Science",
+  //   titleOne: "Grade:",
+  //   titleOneValue: "A",
+  //   titleTwo: "Skills:",
+  //   titleTwoValue: "GW BASIC, MS Office",
+  // },
 ];
 
 const certifications = [
@@ -125,69 +123,55 @@ const certifications = [
     name: "Introduction to front end development - Coursera",
     url: "https://www.coursera.org/account/accomplishments/verify/FYDQ4CYEZ6GT",
   },
-  // {
-  //   name: "Theoretical understanding of HTML - SoloLearn",
-  //   url: "https://www.sololearn.com/Certificate/CT-AQDIYOG4/png",
-  // },
-  // {
-  //   name: "Theoretical understanding of CSS - SoloLearn",
-  //   url: "https://www.sololearn.com/Certificate/CT-6DY9L5PF/png",
-  // },
-  {
-    name: "Elementary Programming With C - Aptech",
-    url: "https://drive.google.com/file/d/1RMOlZN87uEfXgwaA2011Ld2M8OIyCU2e/view?usp=drive_link",
-  },
   {
     name: "CIT (Web Designing) - MLH",
     url: "https://drive.google.com/file/d/1AK_re7r0VUxKixzOSGxZsxl6J-8vPaWb/view?usp=drive_link",
   },
-  // {
-  //   name: "Coder's Clash - BUCIS",
-  //   url: "https://drive.google.com/file/d/1gI4aNP7Ytrcosb1pjO3Bix9qSZYdQQX_/view?usp=drivesdk",
-  // },
+
+  {
+    name: "Google Project Management - Coursera",
+    url: "https://drive.google.com/file/d/1AK_re7r0VUxKixzOSGxZsxl6J-8vPaWb/view?usp=drive_link",
+  },
 ];
 
 const skills = {
-  devops: ["AWS", "SSL Certification", "CI/CD Tools"],
-  languages: [
-    "JavaScript",
-    "TypeScript",
-    "HTML5",
-    "CSS3",
-    "Solidity",
-    "SQL (PostgreSQL, MSSQL, MYSQL)",
-  ],
+  devops: ["AWS", "Digital Ocean", "Vercel", "Netlify"],
+  languages: ["JavaScript", "TypeScript"],
   frameworks: [
     "React.js",
     "Next.js",
     "Node.js",
     "Express.js",
     "Tailwind CSS",
-    "Bootstrap",
     "React Native",
+    "Expo",
     "Redux Toolkit",
     "Zustand",
-    "Shadcn UI",
-    "Next UI",
+    // "Shadcn UI",
   ],
-  cms: ["Wordpress", "Webflow"],
-  nosql: ["MongoDB", "Firebase"],
+  cms: ["Webflow"],
+  nosql: ["MongoDB", "Firebase", "PostgreSQL", "MySQL"],
   versioncontrol: ["Github", "Bitbucket", "Gitlab"],
 };
 
 const experiences = [
   {
+    name: "Zenith Flow Tech",
+    date: "July 2024 - Present",
+    designation: "React Native Developer",
+    list: [
+      "Developed a rabbitry management app for cross-platform iOS and Android using React Native.",
+      "Utilized Xcode for iOS development and debugging.",
+      "Implemented data fetching using TanStack Query for efficient state management.",
+      "Designed and managed form schemas with React Hook Form and Zod for robust validation and error handling.",
+      "Worked on a fitness app using Expo, leveraging Expo Router for navigation and EAS services for seamless building and deployment.",
+      "Enabled over-the-air (OTA) updates using Expo's EAS services for quick app improvements.",
+    ],
+  },
+  {
     name: "Cubicus.io",
     date: "July 2023 - July 2024",
     designation: "Full Stack Developer",
-    // list: [
-    //   "Developed responsive front-end interfaces using React.js and Next.js, increasing user engagement by 25%.",
-    //   "Built and maintained scalable back-end systems with Node.js and Express, reducing server downtime by 30%.",
-    //   "Managed Postgres databases, deploying on AWS RDS and Neon DB, improving query performance by 40%.",
-    //   "Implemented CI/CD pipelines, improving deployment efficiency and reliability by 50%.",
-    //   "Conducted code reviews and mentored new developers, reducing code-related issues by 35%.",
-    //   "Collaborated with design teams to implement UI/UX improvements, enhancing overall application usability.",
-    // ],
     list: [
       "Developed beautiful front-end interfaces using React.js and Next.js.",
       "Leveraged Next.js for improved SEO performance.",
@@ -198,36 +182,24 @@ const experiences = [
       "Applied SSL certification on a backend Node server on an EC2 instance using Caddy and nip.io.",
     ],
   },
-  {
-    name: "Freelancing",
-    date: "March 2023 - Present",
-    designation: "Freelancer",
-    // list: [
-    //   "Designed and implemented custom themes and layouts for clients using Webflow and WordPress Elementor, boosting client satisfaction by 20%.",
-    //   "Utilized Webflow’s visual interface to create complex animations and interactions, increasing average session duration by 15%.",
-    //   "Collaborated with clients to deliver tailored web solutions, achieving a 95% client retention rate.",
-    //   "Optimized website performance and SEO, increasing site traffic by 30%.",
-    //   "Integrated third-party APIs and services, enhancing website functionality and user experience by 25%.",
-    // ],
-    list: [
-      "Designed and implemented custom themes and layouts for clients using Webflow and WordPress Elementor.",
-      "Ensured responsive design for optimal viewing across multiple devices.",
-      "Utilized Webflow’s rich visual interface to create complex animations and interactions.",
-      "Implemented triggers and animations to enhance user experience and engagement.",
-      "Used timed animations to control the sequence and timing of animations.",
-      "Worked with multi-step animations to create complex, layered effects.",
-    ],
-  },
+
+  // {
+  //   name: "Freelancing",
+  //   date: "March 2023 - Present",
+  //   designation: "Freelancer",
+
+  //   list: [
+  //     "Designed and implemented custom themes and layouts for clients using Webflow and WordPress Elementor.",
+  //     "Ensured responsive design for optimal viewing across multiple devices.",
+  //     "Utilized Webflow’s rich visual interface to create complex animations and interactions.",
+  //     "Implemented triggers and animations to enhance user experience and engagement.",
+  //     "Used timed animations to control the sequence and timing of animations.",
+  //     "Worked with multi-step animations to create complex, layered effects.",
+  //   ],
+  // },
 ];
 
 const projects = [
-  // {
-  //   name: "Summare - AI",
-  //   url: "https://summare.ai",
-  //   techStack: ["Next.js 13 | ", "App Router | ", "Next UI"],
-  //   description:
-  //     "Summare.ai is a web app for reading articles. It utilizes Next.js 13, App Router, and Next UI to provide seamless navigation and a user-friendly interface.",
-  // },
   {
     name: "SF Business Solutions",
     url: "https://sfbusinesssolutions.com",
@@ -242,17 +214,24 @@ const projects = [
     description:
       "Nosh NFT is a platform for trading NFTs. Developed using Next.js, Solidity, Node.js, and Express.js to enable NFT creation and transactions.",
   },
-  {
-    name: "Grande Cercle",
-    url: "https://grandcercle.asban.dev",
-    techStack: ["WordPress Elementor | ", "Custom CSS"],
-    description:
-      "Grande Cercle is a conference information site. Created with WordPress Elementor and custom CSS for responsive and interactive design. This website is fully responsive for all screen sizes.",
-  },
+  // {
+  //   name: "Grande Cercle",
+  //   url: "https://grandcercle.asban.dev",
+  //   techStack: ["WordPress Elementor | ", "Custom CSS"],
+  //   description:
+  //     "Grande Cercle is a conference information site. Created with WordPress Elementor and custom CSS for responsive and interactive design. This website is fully responsive for all screen sizes.",
+  // },
   {
     name: "Pixpel.io",
     url: "https://drive.google.com/file/d/1bstIH9HEFoKuif-Zar26aD6VgCI8Zvir/view?usp=sharing",
     techStack: ["React Native | ", "Native Base"],
+    description:
+      "Pixpel.io is a web3 gaming and cryptocurrency platform. Built with React Native and Native Base. This project uses Nativewind for styling along with Native Base for UI components.",
+  },
+  {
+    name: "Beam Fitness",
+    url: "https://drive.google.com/file/d/1bstIH9HEFoKuif-Zar26aD6VgCI8Zvir/view?usp=sharing",
+    techStack: ["Expo | ", "Tanstack Query", "React Hook Form"],
     description:
       "Pixpel.io is a web3 gaming and cryptocurrency platform. Built with React Native and Native Base. This project uses Nativewind for styling along with Native Base for UI components.",
   },
@@ -270,44 +249,25 @@ export default function Home() {
     <main className="flex min-h-screen items-center justify-center">
       <section className="bg-gray-100 p-10 min-h-screen w-1/2 m-10 rounded-xl print:w-full print:m-0">
         <div className="flex justify-between items-center">
-          <div className="flex flex-col ">
-            <h1 className="text-3xl font-bold">Muhammad Kaif Qureshi</h1>
+          <div className="flex flex-col w-full">
+            <div className="flex justify-between w-full">
+              <h1 className="text-3xl font-bold">Muhammad Kaif Qureshi</h1>
+            </div>
             <h2 className="text-xl font-light">Software Developer</h2>
-            {/* <div className="flex items-center space-x-1 mt-1">
-              {linksicons.map((link, index) => (
-                <Link href={link.url} key={index} target="_blank">
-                  <link.icon className="w-5 h-5" />
-                </Link>
-              ))}
-            </div> */}
-          </div>
-          <div className="flex flex-col items-center bg-black text-white p-2 font-extrabold text-2xl">
-            <h1>M</h1>
-            <h1>K</h1>
-            <h1>Q</h1>
           </div>
         </div>
-        <Divider className="my-0 h-[1px]" />
+        <Divider className="my-2 h-[1px]" />
+        <div className="flex items-center justify-between mt-1">
+          {linksicons.map((link, index) => (
+            <Link href={link.url} key={index} target="_blank">
+              <link.icon className="w-5 h-5" />
+            </Link>
+          ))}
+        </div>
+        <Divider className="my-2 h-[1px]" />
 
-        <div className="flex">
-          <div className="w-1/2 h-full mt-2">
-            <h1 className="uppercase text-sm font-semibold mb-1">Socials</h1>
-            {linksicon.map((link, index) => (
-              <div
-                className="flex space-x-2 items-center justify-between w-3/4"
-                key={index}
-              >
-                <link.icon className="w-5 h-5" />
-                {/* <h1 className="text-xs font-semibold w-1/6">{link.title}</h1> */}
-                <div className="flex items-center flex-grow space-x-2">
-                  <h1 className="text-xs text-left ">{link.value}</h1>
-                  <Link href={link.url} target="_blank" className="text-xs">
-                    <FaExternalLinkAlt size={10} />
-                  </Link>
-                </div>
-              </div>
-            ))}
-            <Divider className="my-2 h-[0.5px]" />
+        <div className="flex space-x-4">
+          <div className="w-1/3 h-full mt-2">
             <div className="space-y-1 py-1">
               <h1 className="uppercase text-sm font-semibold">Summary</h1>
               <p className="text-xs">
@@ -318,6 +278,7 @@ export default function Home() {
               </p>
             </div>
             <Divider className="my-2 h-[0.5px]" />
+
             <h1 className="uppercase text-sm font-semibold">Education</h1>
             {education.map((edu, index) => (
               <div className="space-y-4 py-1" key={index}>
@@ -326,12 +287,12 @@ export default function Home() {
                   <p className="text-xsm">
                     {edu.date} | {edu.degree}
                   </p>
-                  <ul className="text-xs list-disc my-0.5">
+                  {/* <ul className="text-xs list-disc my-0.5">
                     <li className="flex space-x-2 text-xsm">
                       <span className="font-semibold mr-1">{edu.titleOne}</span>
                       {edu.titleOneValue}
                     </li>
-                  </ul>
+                  </ul> */}
                   {/* <ul className="text-xs list-disc my-0.5">
                     <li className="flex space-x-2 text-xsm">
                       <span className="font-semibold mr-1">{edu.titleTwo}</span>
@@ -352,10 +313,9 @@ export default function Home() {
               <ul className="list-disc pl-5 space-y-1 mt-2 mb-1">
                 {certifications.map((cert, index) => (
                   <div key={index} className="flex items-center space-x-2">
-                    <li className="text-xs">{cert.name}</li>
-                    <Link href={cert.url}>
-                      <FaExternalLinkAlt size={10} />
-                    </Link>
+                    <li className="text-xs">
+                      <Link href={cert.url}>{cert.name}</Link>
+                    </li>
                   </div>
                 ))}
               </ul>
@@ -383,7 +343,7 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-              <div className="mb-4">
+              {/* <div className="mb-4">
                 <h2 className="text-xs font-semibold">DevOps</h2>
                 <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
                   {skills.devops.map((skill, index) => (
@@ -392,7 +352,7 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
               <div className="mb-4">
                 <h2 className="text-xs font-semibold">CMS/Website Builders</h2>
                 <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
@@ -404,7 +364,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className="mb-4">
-                <h2 className="text-xs font-semibold">NoSQL</h2>
+                <h2 className="text-xs font-semibold">Database</h2>
                 <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
                   {skills.nosql.map((skill, index) => (
                     <li className="text-xs" key={index}>
@@ -425,7 +385,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-1/2 h-full mt-2 px-3">
+          <div className="w-2/3 h-full mt-2 px-3">
             <h1 className="uppercase font-semibold text-sm">Experience</h1>
             {experiences.map((experience, index) => (
               <div key={index} className="my-1">
