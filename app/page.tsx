@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Divider from "./components/Divider";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { PiGithubLogo, PiGlobe, PiLinkedinLogo, PiPhone } from "react-icons/pi";
+import { PiGithubLogo, PiLinkedinLogo, PiPhone } from "react-icons/pi";
 import { MdOutlineMail } from "react-icons/md";
 
 const links = [
@@ -53,11 +53,11 @@ const linksicon = [
     value: "kaifqureshi.dev@gmail.com",
     url: "mailto:kaifqureshi.dev@gmail.com",
   },
-  {
-    icon: PiGlobe,
-    value: "kaifqureshi.vercel.app",
-    url: "https://kaifqureshi.vercel.app",
-  },
+  // {
+  //   icon: PiGlobe,
+  //   value: "kaifqureshi.vercel.app",
+  //   url: "https://kaifqureshi.vercel.app",
+  // },
   {
     icon: PiPhone,
     value: "+923182345206",
@@ -222,7 +222,7 @@ const projects = [
   {
     name: "Beam Fitness",
     url: "https://drive.google.com/file/d/1bstIH9HEFoKuif-Zar26aD6VgCI8Zvir/view?usp=sharing",
-    techStack: ["Expo | ", "Tanstack Query", "React Hook Form"],
+    techStack: ["Expo | ", "Tanstack Query | ", "React Hook Form"],
     description:
       "Beam Fitness is an app built with Expo, Gorhom BottomSheets, and robust form/data handling via React Hook Form and TanStack Query.",
   },
@@ -248,15 +248,22 @@ export default function Home() {
           </div>
         </div>
         <Divider className="my-4 h-[1px]" />
-        <div className="flex items-center justify-between mt-1">
-          {linksicons.map((link, index) => (
-            <Link href={link.url} key={index} target="_blank">
+        <div className="flex justify-between">
+          {linksicon.map((link, index) => (
+            <div
+              className="flex flex-row space-x-2 items-center justify-between"
+              key={index}
+            >
               <link.icon className="w-5 h-5" />
-            </Link>
+              <div className="flex items-center flex-grow space-x-2">
+                <Link className="text-xs" href={link.url} target="_blank">
+                  {link.value}
+                </Link>
+              </div>
+            </div>
           ))}
         </div>
         <Divider className="my-4 h-[1px]" />
-
         <div className="flex space-x-4">
           <div className="w-1/3 h-full mt-2">
             <div className="space-y-1 py-1">
@@ -268,7 +275,7 @@ export default function Home() {
                 software solutions.
               </p>
             </div>
-            <Divider className="my-2 h-[0.5px]" />
+            <Divider className="my-3 h-[0.5px] bg-gray-400" />
 
             <h1 className="uppercase text-sm font-semibold">Education</h1>
             {education.map((edu, index) => (
@@ -296,7 +303,7 @@ export default function Home() {
                 </div>
               </div>
             ))}
-            <Divider className="my-2 h-[0.5px]" />
+            <Divider className="my-3 h-[0.5px] bg-gray-400" />
             <div className="py-1">
               <h1 className="uppercase text-sm font-semibold">
                 Certifications
@@ -311,7 +318,7 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <Divider className="my-2 h-[0.5px]" />
+            <Divider className="my-3 h-[0.5px] bg-gray-400" />
             <div>
               <h1 className="uppercase text-sm font-semibold my-2">Skills</h1>
               <div className="mb-4">
