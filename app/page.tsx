@@ -160,8 +160,7 @@ const experiences = [
     date: "July 2024 - Present",
     designation: "React Native Developer",
     list: [
-      "Developed a rabbitry management app for cross-platform iOS and Android using React Native.",
-      "Utilized Xcode for iOS development and debugging.",
+      "Developed a rabbitry management app for cross-platform, iOS and Android using React Native.",
       "Implemented data fetching using TanStack Query for efficient state management.",
       "Designed and managed form schemas with React Hook Form and Zod for robust validation and error handling.",
       "Worked on a fitness app using Expo, leveraging Expo Router for navigation and EAS services for seamless building and deployment.",
@@ -178,7 +177,6 @@ const experiences = [
       "Built scalable back-end systems using Node.js and Express server.",
       "Successfully deployed applications on AWS EC2 and Digital Ocean.",
       "Managed Postgres databases, deploying on various platforms including Neon DB and AWS RDS.",
-      "Worked on blockchain technology, specifically Solidity smart contracts for ERC721 tokens.",
       "Applied SSL certification on a backend Node server on an EC2 instance using Caddy and nip.io.",
     ],
   },
@@ -214,13 +212,6 @@ const projects = [
     description:
       "Nosh NFT is a platform for trading NFTs. Developed using Next.js, Solidity, Node.js, and Express.js to enable NFT creation and transactions.",
   },
-  // {
-  //   name: "Grande Cercle",
-  //   url: "https://grandcercle.asban.dev",
-  //   techStack: ["WordPress Elementor | ", "Custom CSS"],
-  //   description:
-  //     "Grande Cercle is a conference information site. Created with WordPress Elementor and custom CSS for responsive and interactive design. This website is fully responsive for all screen sizes.",
-  // },
   {
     name: "Pixpel.io",
     url: "https://drive.google.com/file/d/1bstIH9HEFoKuif-Zar26aD6VgCI8Zvir/view?usp=sharing",
@@ -233,7 +224,7 @@ const projects = [
     url: "https://drive.google.com/file/d/1bstIH9HEFoKuif-Zar26aD6VgCI8Zvir/view?usp=sharing",
     techStack: ["Expo | ", "Tanstack Query", "React Hook Form"],
     description:
-      "Pixpel.io is a web3 gaming and cryptocurrency platform. Built with React Native and Native Base. This project uses Nativewind for styling along with Native Base for UI components.",
+      "Beam Fitness is an app built with Expo, Gorhom BottomSheets, and robust form/data handling via React Hook Form and TanStack Query.",
   },
   // {
   //   name: "ADHD Coach",
@@ -256,7 +247,7 @@ export default function Home() {
             <h2 className="text-xl font-light">Software Developer</h2>
           </div>
         </div>
-        <Divider className="my-2 h-[1px]" />
+        <Divider className="my-4 h-[1px]" />
         <div className="flex items-center justify-between mt-1">
           {linksicons.map((link, index) => (
             <Link href={link.url} key={index} target="_blank">
@@ -264,7 +255,7 @@ export default function Home() {
             </Link>
           ))}
         </div>
-        <Divider className="my-2 h-[1px]" />
+        <Divider className="my-4 h-[1px]" />
 
         <div className="flex space-x-4">
           <div className="w-1/3 h-full mt-2">
