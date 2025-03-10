@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Divider from "./components/Divider";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import { PiGithubLogo, PiLinkedinLogo, PiPhone } from "react-icons/pi";
 import { MdOutlineMail } from "react-icons/md";
 
@@ -413,13 +412,13 @@ export default function Home() {
                       <li className="text-xs">
                         <p className="flex items-center font-semibold">
                           {project.name}
-                          <Link
+                          {/* <Link
                             href={project.url}
                             target="_blank"
                             className="ml-2"
                           >
                             <FaExternalLinkAlt href={project.url} size={10} />
-                          </Link>
+                          </Link> */}
                         </p>
                         <div className="flex">
                           {project.techStack.map((tech, idx) => (
