@@ -1,8 +1,6 @@
-import Link from "next/link";
-import Divider from "./components/Divider";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import { PiGithubLogo, PiLinkedinLogo, PiPhone } from "react-icons/pi";
 import { MdOutlineMail } from "react-icons/md";
+import Link from "next/link";
 
 const linksicon = [
   {
@@ -38,19 +36,19 @@ const education = [
     date: "2022 - 2026",
     degree: "Bachelor of Information Technology",
     titleOne: "CGPA:",
-    titleOneValue: "3.5",
+    titleOneValue: "3.5/4.0",
     titleTwo: "Skills:",
     titleTwoValue: "DSA, OOP, DBMS, Java, C++",
   },
-  {
-    name: "Fazaia Degree College",
-    date: "2020 - 2022",
-    degree: "Computer Science",
-    titleOne: "Grade:",
-    titleOneValue: "A",
-    titleTwo: "Skills:",
-    titleTwoValue: "C, Linux, Networking",
-  },
+  // {
+  //   name: "Fazaia Degree College",
+  //   date: "2020 - 2022",
+  //   degree: "Computer Science",
+  //   titleOne: "Grade:",
+  //   titleOneValue: "A",
+  //   titleTwo: "Skills:",
+  //   titleTwoValue: "C, Linux, Networking",
+  // },
   // {
   //   name: "The Educators",
   //   date: "2009 - 2020",
@@ -64,7 +62,7 @@ const education = [
 
 const certifications = [
   {
-    name: "Meta (Introduction to Front End development) - Coursera",
+    name: "Web Development - Malaysian Learning Hub",
     url: "https://www.coursera.org/account/accomplishments/verify/FYDQ4CYEZ6GT",
   },
   // {
@@ -83,28 +81,22 @@ const certifications = [
 
 const skills = {
   languages: ["JavaScript", "TypeScript"],
-  sql: ["PostgreSQL", "MSSQL", "MySQL"],
-  frameworks: [
-    "Expo",
-    "Redux Toolkit",
-    "Zustand",
-    "React Hook Form",
-    "Reanimated",
-    "Tanstack Query",
-  ],
+  frameworks: ["React.js", "Next.js", "Node.js", "Express.js", "Expo"],
+  sql: ["PostgreSQL", "MySQL"],
   nosql: ["MongoDB", "Firebase"],
-  versioncontrol: ["Github", "Bitbucket", "Gitlab"],
+  versioncontrol: ["GitHub", "GitLab", "Bitbucket"],
 };
 
 const experiences = [
   {
     name: "Zenithflow Tech",
-    date: "July 2024 - Present",
+    date: "July 2024 - May 2025",
     designation: "React Native Developer",
     list: [
-      "Developed a cross-platform application for iOS and Android enabling specialized data management and real-time updates.",
-      "Built a social media platform centered on fitness, featuring real-time workout sharing, community forums, and interactive class scheduling to boost user engagement and collaboration.",
-      "Optimized state management and integrated robust testing practices for improved app stability and performance.",
+      "Converted 10+ Figma designs into beautiful mobile apps and optimized responsiveness for 3+ different screen sizes including tablets.",
+      "Developed cross-platform applications for iOS and Android enabling specialized data management and real-time updates.",
+      "Reduced app crashes and cut average screen-load time by 400ms through state-management refactoring and automated test suites.",
+      "Used Firebase Analytics to track feature usage and crashes, driving data-led decisions that improved app stability.",
     ],
   },
   {
@@ -113,8 +105,9 @@ const experiences = [
     designation: "Full Stack Developer",
     list: [
       "Integrated a frontend application with secure backend APIs for real-time financial data and interactive charts.",
-      "Developed cryptocurrency graphs and statistics features, ensuring optimized performance for large data sets.",
-      "Collaborated with cross-functional teams to design a dynamic platform, focusing on scalability, security, and user-friendly interfaces.",
+      "Built cryptocurrency graphs and statistics features, ensuring optimized performance for large data sets.",
+      "Deployed 4+ Node.js servers on AWS EC2 and Digital Ocean, achieving 99.9% uptime with automated monitoring.",
+      "Coordinated with DevOps to automate nightly build-and-deploy pipelines, eliminating 5+ manual releases per week.",
     ],
   },
   // {
@@ -131,237 +124,241 @@ const experiences = [
 
 const projects = [
   {
-    name: "Pixpel.io",
-    url: "https://drive.google.com/file/d/1bstIH9HEFoKuif-Zar26aD6VgCI8Zvir/view?usp=sharing",
-    techStack: ["React Native | ", "Native Base"],
-    description:
-      "A web3 gaming and cryptocurrency platform using Nativewind, Native Base UI, and React Native.",
-  },
-  {
-    name: "Bunny Books",
-    url: "https://github.com/qureshikaif/adhd-coach-native",
-    techStack: [
-      "React Native | ",
-      "TanStack Query | ",
-      "React Hook Form | ",
-      "Zod",
-    ],
-    description:
-      "Rabbitry management app powered by Reanimated, Gesture Handler, React Navigation, and stylesheet-based UI.",
-  },
-  {
     name: "Beam Fitness",
     url: "https://github.com/qureshikaif/adhd-coach-native",
-    techStack: [
-      "Expo | ",
-      "Gorhom BottomSheets | ",
-      "TanStack Query | ",
-      "React Hook Form | ",
-      "Zod",
-    ],
+    techStack: ["React Native"],
     description:
-      "Fitness app built with Expo, Gorhom BottomSheets, and robust form/data handling via React Hook Form and TanStack Query.",
+      "Built the Beam Fitness app with Expo, Gorhom Bottom Sheets, React Hook Form, and Tanstack Query.",
+  },
+  {
+    name: "SF Business Solutions",
+    url: "https://github.com/qureshikaif/adhd-coach-native",
+    techStack: ["Next.js"],
+    description:
+      "SF Business Solutions is a website built with Next.js using App Router and Shadcn UI library for a consultancy firm.",
+  },
+  {
+    name: "Wealth Way Trade",
+    url: "https://github.com/qureshikaif/adhd-coach-native",
+    techStack: ["Node.js & Express.js"],
+    description:
+      "Wealth Way Trade backend is built using Node.js/Express.js with JWT authentication, nodemailer integration, a modular architecture, and deployment on AWS EC2.",
   },
 ];
+
+const additionalInfo = {
+  languages: "Urdu (native); English (fluent).",
+  certifications:
+    "Web Development - Malaysian Learning Hub, Google Project Management - Coursera.",
+  achievements:
+    "Winner of 'Code in the Dark' in an inter-university competition. Top 10 finalist in Coder's Clash hackathon.",
+  openSource:
+    "Added a new feature to a popular Sleep Tracker mobile app. https://vmiklos.hu/plees-tracker/",
+};
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <section className="bg-gray-100 p-14 min-h-screen w-1/2 m-10 rounded-xl print:w-full print:m-0 print:bg-white">
-        <div className="flex justify-between items-center">
-          <div className="flex flex-col w-full">
-            <h1 className="text-3xl font-bold text-center w-full">
-              Muhammad Kaif Qureshi
-            </h1>
-            <h2 className="text-xl font-light text-center">
-              React Native Developer
-            </h2>
+    <main className="flex min-h-screen items-center justify-center bg-white">
+      <section className="bg-white p-12 min-h-screen max-w-4xl w-full print:w-full print:m-0">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-light text-gray-700 tracking-wide mb-4">
+            MUHAMMAD KAIF QURESHI
+          </h1>
+
+          {/* Social Links */}
+          <div className="flex justify-center mb-4 space-x-4">
+            <div className="flex items-center space-x-1">
+              <PiPhone className="w-4 h-4 text-gray-600" />
+              <span className="text-sm text-gray-700">+923182345206</span>
+            </div>
+            <div className="flex items-center space-x-1">
+              <MdOutlineMail className="w-4 h-4 text-gray-600" />
+              <span className="text-sm text-gray-700">
+                kaifqureshi.dev@gmail.com
+              </span>
+            </div>
+            <div className="flex items-center space-x-1">
+              <PiLinkedinLogo className="w-4 h-4 text-gray-600" />
+              <Link
+                href="https://linkedin.com/in/mohammad-kaif-qureshi-77052a1a5/"
+                target="_blank"
+                className="text-sm text-gray-700 hover:text-blue-600"
+              >
+                linkedin.com/in/mohammad-kaif-qureshi-77052a1a5/
+              </Link>
+            </div>
           </div>
         </div>
-        <Divider className="my-3 h-[1px]" />
-        <div className="flex justify-between">
-          {linksicon.map((link, index) => (
-            <div
-              className="flex flex-row space-x-2 items-center justify-between"
-              key={index}
-            >
-              <link.icon className="w-5 h-5" />
-              <div className="flex items-center flex-grow space-x-2">
-                <Link className="text-xs" href={link.url} target="_blank">
-                  {link.value}
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-        <Divider className="my-3 h-[0.5px]" />
 
-        <div className="w-full h-full mt-2">
-          <div className="py-1">
-            <h1 className="uppercase text-sm font-semibold">Summary</h1>
-            <Divider className="mb-2 h-[0.5px]" />
-            <p className="text-xs">
-              Accomplished React Native developer with a proven ability to
-              transform complex business requirements into high-performance,
-              user-friendly applications. Adept at optimizing code, designing
-              intuitive UIs, and collaborating with cross-functional teams to
-              deliver reliable, scalable solutions on time.
-            </p>
-          </div>
-          <div>
-            <h1 className="uppercase text-sm font-semibold mt-3">Skills</h1>
-            <Divider className="mb-2 h-[0.5px]" />
+        {/* Horizontal Line */}
+        <div className="w-full h-px bg-gray-300 mb-3"></div>
 
-            {/* Languages */}
-            <div className="mb-2 flex">
-              <h2 className="text-xs font-semibold">Languages:</h2>
-              <ul className="flex gap-y-2 flex-wrap ps-2">
-                {skills.languages.map((skill, index) => (
-                  <li className="text-xs" key={index}>
-                    {skill}
-                    &nbsp;
-                    {index < skills.languages.length - 1 && `|`}
-                    &nbsp;
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* SQL */}
-            <div className="mb-2 flex">
-              <h2 className="text-xs font-semibold">SQL:</h2>
-              <ul className="flex gap-y-2 flex-wrap ps-2">
-                {skills.sql.map((skill, index) => (
-                  <li className="text-xs" key={index}>
-                    {skill}
-                    &nbsp;
-                    {index < skills.sql.length - 1 && "|"}
-                    &nbsp;
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* NoSQL */}
-            <div className="mb-2 flex">
-              <h2 className="text-xs font-semibold">NoSQL:</h2>
-              <ul className="flex gap-y-2 flex-wrap ps-2">
-                {skills.nosql.map((skill, index) => (
-                  <li className="text-xs" key={index}>
-                    {skill}
-                    &nbsp;
-                    {index < skills.nosql.length - 1 && "|"}
-                    &nbsp;
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Version Control */}
-            <div className="mb-2 flex">
-              <h2 className="text-xs font-semibold">Version Control:</h2>
-              <ul className="flex gap-y-2 flex-wrap ps-2">
-                {skills.versioncontrol.map((skill, index) => (
-                  <li className="text-xs" key={index}>
-                    {skill}
-                    &nbsp;
-                    {index < skills.versioncontrol.length - 1 && "|"}
-                    &nbsp;
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Frameworks/Libraries */}
-            <div className="mb-2 flex">
-              <h2 className="text-xs font-semibold">Framework/Libraries:</h2>
-              <ul className="flex gap-y-2 flex-wrap ps-2">
-                {skills.frameworks.map((skill, index) => (
-                  <li className="text-xs" key={index}>
-                    {skill}
-                    &nbsp;
-                    {index < skills.frameworks.length - 1 && "|"}
-                    &nbsp;
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <h1 className="uppercase font-semibold text-sm mt-3">Experience</h1>
-          <Divider className="mb-2 h-[0.5px]" />
-
-          {experiences.map((experience, index) => (
-            <div key={index} className="my-1">
-              <div className="flex items-center justify-between">
-                <h1 className="text-xs font-semibold">{experience.name}</h1>
-                <p className="text-xsm mb-1">
-                  {experience.date} | {experience.designation}
-                </p>
-              </div>
-              <ul className="text-xs list-disc pl-7">
-                {experience.list.map((list, idx) => (
-                  <li key={idx} className="mb-[0.15rem]">
-                    {list}
-                  </li>
-                ))}
-              </ul>
-              <div className="h-2"></div>
-            </div>
-          ))}
-          <h1 className="uppercase text-sm font-semibold mt-3">Education</h1>
-          <Divider className="mb-2 h-[0.5px]" />
-          {education.map((edu, index) => (
-            <div className="py-1" key={index}>
-              <div className="flex items-center justify-between">
-                <h1 className="text-xs font-semibold">{edu.name}</h1>
-                <p className="text-xsm ml-2">{edu.date}</p>
-              </div>
-              <p className="text-xsm">
-                {edu.titleOne} {edu.titleOneValue}
-              </p>
-            </div>
-          ))}
-          <div className="py-1">
-            <h1 className="uppercase text-sm font-semibold mt-3">
-              Certifications
-            </h1>
-            <Divider className="mb-2 h-[0.5px]" />
-            <ul className="list-disc pl-5 space-y-1 mt-3 mb-1">
-              {certifications.map((cert, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <li className="text-xs">{cert.name}</li>
-                  <Link href={cert.url} target="_blank">
-                    <FaExternalLinkAlt size={10} />
-                  </Link>
-                </div>
-              ))}
-            </ul>
-          </div>
-
-          <div>
+        {/* Two Column Layout */}
+        <div className="grid grid-cols-12 gap-8">
+          {/* Left Column */}
+          <div className="col-span-4 space-y-8">
+            {/* Skills */}
             <div>
-              <h1 className="font-semibold text-sm mt-3">PROJECTS</h1>
-              <Divider className="mb-2 h-[0.5px]" />
-              <ul className="list-disc pl-7 space-y-1">
-                {projects.map((project, index) => (
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide mb-2">
+                SKILLS
+              </h3>
+              <div className="border-b border-gray-300 mb-3"></div>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Frameworks:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {skills.frameworks.join(", ")}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Languages:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {skills.languages.join(", ")}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Version Control:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {skills.versioncontrol.join(", ")}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Database:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {[...skills.sql, ...skills.nosql].join(", ")}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Education */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide mb-2">
+                EDUCATION
+              </h3>
+              <div className="border-b border-gray-300 mb-3"></div>
+              <div className="space-y-4">
+                {education.map((edu, index) => (
                   <div key={index}>
-                    <li className="text-xs">
-                      <p className="flex items-center font-semibold">
-                        {project.name}
-                        {/* <Link
-                          href={project.url}
-                          target="_blank"
-                          className="ml-2"
-                        >
-                          <FaExternalLinkAlt size={10} />
-                        </Link> */}
-                      </p>
-                      <p>{project.description}</p>
-                    </li>
-                    <div className="h-2"></div>
+                    <h4 className="text-sm font-semibold text-gray-800 mb-1">
+                      {edu.name.toUpperCase()}
+                    </h4>
+                    <p className="text-sm text-gray-700 mb-1">{edu.degree}</p>
+                    <p className="text-sm text-gray-700 mb-1">
+                      {edu.titleOne} {edu.titleOneValue}
+                    </p>
                   </div>
                 ))}
-              </ul>
+              </div>
+            </div>
+
+            {/* Additional */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide mb-2">
+                ADDITIONAL
+              </h3>
+              <div className="border-b border-gray-300 mb-3"></div>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Languages:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {additionalInfo.languages}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Certifications:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {additionalInfo.certifications}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Achievements:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {additionalInfo.achievements}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Open-source contribution:
+                  </p>
+                  <p className="text-sm text-gray-700 break-words">
+                    Added a new feature to a popular Sleep Tracker mobile app.{" "}
+                    <Link
+                      href="https://vmiklos.hu/plees-tracker/"
+                      target="_blank"
+                      className="text-gray-700 hover:text-gray-900 underline"
+                    >
+                      https://vmiklos.hu/plees-tracker/
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column */}
+          <div className="col-span-8 space-y-8">
+            {/* Experience */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide mb-2">
+                EXPERIENCE
+              </h3>
+              <div className="border-b border-gray-300 mb-3"></div>
+              <div className="space-y-6">
+                {experiences.map((experience, index) => (
+                  <div key={index}>
+                    <h4 className="text-sm font-semibold text-gray-800 mb-1">
+                      {experience.name.toUpperCase()} - Karachi, Pakistan
+                    </h4>
+                    <div className="flex justify-between items-center mb-2">
+                      <p className="text-sm text-gray-700 italic">
+                        {experience.designation}
+                      </p>
+                      <p className="text-sm text-gray-700">{experience.date}</p>
+                    </div>
+                    <ul className="text-sm text-gray-700 leading-relaxed list-disc pl-5 space-y-1">
+                      {experience.list.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Projects */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide mb-2">
+                PROJECTS
+              </h3>
+              <div className="border-b border-gray-300 mb-3"></div>
+              <div className="space-y-4">
+                {projects.map((project, index) => (
+                  <div key={index}>
+                    <h4 className="text-sm font-semibold text-gray-800 mb-1">
+                      {project.name.toUpperCase()} - {project.techStack[0]}
+                    </h4>
+                    <p className="text-sm text-gray-700">
+                      {project.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
