@@ -162,7 +162,7 @@ export default function Home() {
       <section className="bg-white p-12 min-h-screen max-w-4xl w-full print:w-full print:m-0">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-light text-gray-700 tracking-wide mb-4">
+          <h1 className="text-4xl font-black text-gray-700 tracking-wide mb-4">
             MUHAMMAD KAIF QURESHI
           </h1>
 
