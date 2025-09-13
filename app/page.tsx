@@ -25,8 +25,8 @@ const linksicon = [
   // },
   {
     icon: PiPhone,
-    value: "+923182345206",
-    url: "tel:+923182345206",
+    value: "+923012865933",
+    url: "tel:+923012865933",
   },
 ];
 
@@ -83,20 +83,20 @@ const skills = {
   languages: ["JavaScript", "TypeScript"],
   frameworks: ["React.js", "Next.js", "Node.js", "Express.js", "Expo"],
   sql: ["PostgreSQL", "MySQL"],
-  nosql: ["MongoDB", "Firebase"],
+  nosql: ["MongoDB", "Firebase", "Supabase"],
   versioncontrol: ["GitHub", "GitLab", "Bitbucket"],
 };
 
 const experiences = [
   {
     name: "Zenithflow Tech",
-    date: "July 2024 - May 2025",
-    designation: "React Native Developer",
+    date: "July 2024 - Present",
+    designation: "Full Stack Developer",
     list: [
-      "Converted 10+ Figma designs into beautiful mobile apps and optimized responsiveness for 3+ different screen sizes including tablets.",
-      "Developed cross-platform applications for iOS and Android enabling specialized data management and real-time updates.",
-      "Reduced app crashes and cut average screen-load time by 400ms through state-management refactoring and automated test suites.",
-      "Used Firebase Analytics to track feature usage and crashes, driving data-led decisions that improved app stability.",
+      "Converted 10+ Figma designs into pixel-perfect Next.js applications and React Native mobile apps, optimizing responsiveness for 3+ different screen sizes.",
+      "Developed full-stack applications using Next.js 14 with App Router and server components, reducing initial page load by 60%.",
+      "Improved application performance by implementing code splitting, cutting average screen-load time by 400ms and boosting SEO scores.",
+      "Built real-time collaboration features using WebSocket integration and REST APIs, enabling live data updates.",
     ],
   },
   {
@@ -104,10 +104,10 @@ const experiences = [
     date: "July 2023 - July 2024",
     designation: "Full Stack Developer",
     list: [
-      "Integrated a frontend application with secure backend APIs for real-time financial data and interactive charts.",
-      "Built cryptocurrency graphs and statistics features, ensuring optimized performance for large data sets.",
-      "Deployed 4+ Node.js servers on AWS EC2 and Digital Ocean, achieving 99.9% uptime with automated monitoring.",
-      "Coordinated with DevOps to automate nightly build-and-deploy pipelines, eliminating 5+ manual releases per week.",
+      "Built a Next.js dashboard with secure backend API integration, implementing SSR for real-time financial data visualization.",
+      "Developed interactive cryptocurrency graphs using Chart.js, optimizing performance through memoization for complex data.",
+      "Deployed 4+ Next.js applications on Vercel, implementing edge functions for 99.9% uptime.",
+      "Implemented API rate limiting, JWT authentication, and automated CI/CD pipelines, reducing deployment time by 70%.",
     ],
   },
   // {
@@ -138,11 +138,11 @@ const projects = [
       "SF Business Solutions is a website built with Next.js using App Router and Shadcn UI library for a consultancy firm.",
   },
   {
-    name: "Wealth Way Trade",
+    name: "Pixpel.io",
     url: "https://github.com/qureshikaif/adhd-coach-native",
-    techStack: ["Node.js & Express.js"],
+    techStack: ["Next.js & React Native"],
     description:
-      "Wealth Way Trade backend is built using Node.js/Express.js with JWT authentication, nodemailer integration, a modular architecture, and deployment on AWS EC2.",
+      "Pixpel.io includes a Next.js web dashboard and React Native mobile app with JWT authentication and a modular architecture.",
   },
 ];
 
