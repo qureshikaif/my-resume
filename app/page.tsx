@@ -62,6 +62,10 @@ const education = [
 
 const certifications = [
   {
+    name: "Meta Front-End Developer - Coursera",
+    url: "",
+  },
+  {
     name: "Web Development - Malaysian Learning Hub",
     url: "https://www.coursera.org/account/accomplishments/verify/FYDQ4CYEZ6GT",
   },
@@ -69,14 +73,14 @@ const certifications = [
   //   name: "Elementary Programming With C - Aptech",
   //   url: "https://drive.google.com/file/d/1RMOlZN87uEfXgwaA2011Ld2M8OIyCU2e/view?usp=drive_link",
   // },
-  {
-    name: "Google Project Management - Coursera",
-    url: "https://coursera.org/verify/professional-cert/LW026CYHFNM1",
-  },
-  {
-    name: "CIT (Web Designing) - MLH",
-    url: "https://drive.google.com/file/d/1AK_re7r0VUxKixzOSGxZsxl6J-8vPaWb/view?usp=drive_link",
-  },
+  // {
+  //   name: "Google Project Management - Coursera",
+  //   url: "https://coursera.org/verify/professional-cert/LW026CYHFNM1",
+  // },
+  // {
+  //   name: "CIT (Web Designing) - MLH",
+  //   url: "https://drive.google.com/file/d/1AK_re7r0VUxKixzOSGxZsxl6J-8vPaWb/view?usp=drive_link",
+  // },
 ];
 
 const skills = {
@@ -90,23 +94,40 @@ const skills = {
 const experiences = [
   {
     name: "Zenithflow Tech",
-    date: "July 2024 - Present",
+    date: "February 2026 - Present",
     designation: "Full Stack Developer",
     list: [
-      "Converted 10+ Figma designs into pixel-perfect Next.js applications and React Native mobile apps, optimizing responsiveness for 3+ different screen sizes.",
-      "Developed full-stack applications using Next.js 14 with App Router and server components, reducing initial page load by 60%.",
-      "Improved application performance by implementing code splitting, cutting average screen-load time by 400ms and boosting SEO scores.",
-      "Built real-time collaboration features using WebSocket integration and REST APIs, enabling live data updates.",
+      "Developing and maintaining full-stack web applications using Next.js ensuring scalable and performant solutions.",
+      "Building RESTful APIs and integrating third-party services to support business logic and streamline internal workflows.",
     ],
   },
+  {
+    name: "Bonded",
+    date: "September 2025 - February 2026",
+    designation: "Next.js Developer",
+    list: [
+      "Created Claude code plugins and integrated them with a Next.js dashboard.",
+      "Worked on Mastra AI workflows to develop a website-building automation platform using Next.js and Mastra AI.",
+    ],
+  },
+  {
+    name: "Zenithflow Tech",
+    date: "July 2024 - May 2025",
+    designation: "React Native Developer",
+    list: [
+      "Developed and maintained cross-platform mobile applications using React Native / Expo, delivering seamless user experiences on iOS and Android.",
+      // "Integrated REST APIs and implemented Tanstack Query for efficient data fetching, caching, and state management across mobile apps.",
+      "Leveraged EAS Build/Submit for streamlined CI/CD, deploying apps to Google Play Store and Apple App Store.",
+    ],
+  },
+
   {
     name: "Cubicus.io",
     date: "July 2023 - July 2024",
     designation: "Full Stack Developer",
     list: [
       "Built a Next.js dashboard with secure backend API integration, implementing SSR for real-time financial data visualization.",
-      "Developed interactive cryptocurrency graphs using Chart.js, optimizing performance through memoization for complex data.",
-      "Deployed 4+ Next.js applications on Vercel, implementing edge functions for 99.9% uptime.",
+      // "Developed interactive cryptocurrency graphs using Chart.js, optimizing performance through memoization for complex data.",
       "Implemented API rate limiting, JWT authentication, and automated CI/CD pipelines, reducing deployment time by 70%.",
     ],
   },
@@ -125,31 +146,55 @@ const experiences = [
 const projects = [
   {
     name: "Beam Fitness",
-    url: "https://github.com/qureshikaif/adhd-coach-native",
+    url: "https://play.google.com/store/apps/details?id=com.beamfitness.app",
     techStack: ["React Native"],
     description:
       "Built the Beam Fitness app with Expo, Gorhom Bottom Sheets, React Hook Form, and Tanstack Query.",
   },
-  {
-    name: "SF Business Solutions",
-    url: "https://github.com/qureshikaif/adhd-coach-native",
-    techStack: ["Next.js"],
-    description:
-      "SF Business Solutions is a website built with Next.js using App Router and Shadcn UI library for a consultancy firm.",
-  },
+  // {
+  //   name: "SF Business Solutions",
+  //   url: "https://github.com/qureshikaif/adhd-coach-native",
+  //   techStack: ["Next.js"],
+  //   description:
+  //     "SF Business Solutions is a website built with Next.js using App Router and Shadcn UI library for a consultancy firm.",
+  // },
   {
     name: "Pixpel.io",
-    url: "https://github.com/qureshikaif/adhd-coach-native",
+    url: "https://www.pixpel.io",
     techStack: ["Next.js & React Native"],
     description:
       "Pixpel.io includes a Next.js web dashboard and React Native mobile app with JWT authentication and a modular architecture.",
+  },
+  {
+    name: "MuzzGen",
+    url: "https://play.google.com/store/apps/details?id=com.MuzzGen",
+    techStack: ["React Native"],
+    description: "",
+  },
+  {
+    name: "SF Business Solutions",
+    url: "https://sfbusinesssolutions.com",
+    techStack: ["Next.js"],
+    description: "",
+  },
+  {
+    name: "MHRM Traders",
+    url: "https://mhrm-traders-website.vercel.app",
+    techStack: ["Next.js"],
+    description: "",
+  },
+  {
+    name: "Launchieve",
+    url: "https://launchieve.com",
+    techStack: ["Next.js"],
+    description: "",
   },
 ];
 
 const additionalInfo = {
   languages: "Urdu (native); English (fluent).",
   certifications:
-    "Web Development - Malaysian Learning Hub, Google Project Management - Coursera.",
+    "Meta Front-End Developer - Coursera, Web Development - Malaysian Learning Hub.",
   achievements:
     "Winner of 'Code in the Dark' in an inter-university competition. Top 10 finalist in Coder's Clash hackathon.",
   openSource:
@@ -347,15 +392,21 @@ export default function Home() {
                 PROJECTS
               </h3>
               <div className="border-b border-gray-300 mb-3"></div>
-              <div className="space-y-4">
+              <div className="grid grid-cols-2 gap-x-6 gap-y-1">
                 {projects.map((project, index) => (
                   <div key={index}>
-                    <h4 className="text-sm font-semibold text-gray-800 mb-1">
-                      {project.name.toUpperCase()} - {project.techStack[0]}
+                    <h4 className="text-sm text-gray-800 mb-1">
+                      {project.url ? (
+                        <Link href={project.url} target="_blank" className="hover:text-blue-600">
+                          {project.name}
+                        </Link>
+                      ) : (
+                        project.name
+                      )} - {project.techStack[0]}
                     </h4>
-                    <p className="text-sm text-gray-700">
+                    {/* <p className="text-sm text-gray-700">
                       {project.description}
-                    </p>
+                    </p> */}
                   </div>
                 ))}
               </div>
