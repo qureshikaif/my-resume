@@ -1,40 +1,6 @@
-import Link from "next/link";
-import Divider from "./components/Divider";
 import { PiGithubLogo, PiLinkedinLogo, PiPhone } from "react-icons/pi";
 import { MdOutlineMail } from "react-icons/md";
-
-const links = [
-  {
-    title: "LinkedIn:",
-    value: "Muhammad Kaif Qureshi",
-    url: "https://linkedin.com/in/mohammad-kaif-qureshi-77052a1a5/",
-  },
-  {
-    title: "Email:",
-    value: "kaifqureshi.dev@gmail.com",
-    url: "mailto:kaifqureshi.dev@gmail.com",
-  },
-  {
-    title: "Website:",
-    value: "kaifqureshi.vercel.app",
-    url: "https://kaifqureshi.vercel.app",
-  },
-  // {
-  //   title: "Upwork:",
-  //   value: "Muhammad Kaif Qureshi",
-  //   url: "https://www.upwork.com/freelancers/~01dcfe9b5f254cca69",
-  // },
-  {
-    title: "Phone:",
-    value: "+923182345206",
-    url: "tel:+923182345206",
-  },
-  {
-    title: "Github:",
-    value: "qureshikaif",
-    url: "https://github.com/qureshikaif",
-  },
-];
+import Link from "next/link";
 
 const linksicon = [
   {
@@ -59,31 +25,8 @@ const linksicon = [
   // },
   {
     icon: PiPhone,
-    value: "+923182345206",
-    url: "tel:+923182345206",
-  },
-];
-
-const linksicons = [
-  {
-    icon: PiLinkedinLogo,
-    url: "https://linkedin.com/in/mohammad-kaif-qureshi-77052a1a5/",
-  },
-  {
-    icon: PiGithubLogo,
-    url: "https://github.com/qureshikaif",
-  },
-  {
-    icon: MdOutlineMail,
-    url: "mailto:kaifqureshi.dev@gmail.com",
-  },
-  // {
-  //   icon: PiGlobe,
-  //   url: "https://kaifqureshi.vercel.app",
-  // },
-  {
-    icon: PiPhone,
-    url: "tel:+923182345206",
+    value: "+923012865933",
+    url: "tel:+923012865933",
   },
 ];
 
@@ -93,19 +36,19 @@ const education = [
     date: "2022 - 2026",
     degree: "Bachelor of Information Technology",
     titleOne: "CGPA:",
-    titleOneValue: "3.5",
+    titleOneValue: "3.5/4.0",
     titleTwo: "Skills:",
     titleTwoValue: "DSA, OOP, DBMS, Java, C++",
   },
-  {
-    name: "Fazaia Degree College",
-    date: "2020 - 2022",
-    degree: "Computer Science",
-    titleOne: "Grade:",
-    titleOneValue: "A",
-    titleTwo: "Skills:",
-    titleTwoValue: "C, Linux, Networking",
-  },
+  // {
+  //   name: "Fazaia Degree College",
+  //   date: "2020 - 2022",
+  //   degree: "Computer Science",
+  //   titleOne: "Grade:",
+  //   titleOneValue: "A",
+  //   titleTwo: "Skills:",
+  //   titleTwoValue: "C, Linux, Networking",
+  // },
   // {
   //   name: "The Educators",
   //   date: "2009 - 2020",
@@ -119,344 +62,358 @@ const education = [
 
 const certifications = [
   {
-    name: "Introduction to front end development - Coursera",
+    name: "Meta Front-End Developer - Coursera",
+    url: "",
+  },
+  {
+    name: "Web Development - Malaysian Learning Hub",
     url: "https://www.coursera.org/account/accomplishments/verify/FYDQ4CYEZ6GT",
   },
-  {
-    name: "CIT (Web Designing) - MLH",
-    url: "https://drive.google.com/file/d/1AK_re7r0VUxKixzOSGxZsxl6J-8vPaWb/view?usp=drive_link",
-  },
-
-  {
-    name: "Google Project Management - Coursera",
-    url: "https://drive.google.com/file/d/1AK_re7r0VUxKixzOSGxZsxl6J-8vPaWb/view?usp=drive_link",
-  },
+  // {
+  //   name: "Elementary Programming With C - Aptech",
+  //   url: "https://drive.google.com/file/d/1RMOlZN87uEfXgwaA2011Ld2M8OIyCU2e/view?usp=drive_link",
+  // },
+  // {
+  //   name: "Google Project Management - Coursera",
+  //   url: "https://coursera.org/verify/professional-cert/LW026CYHFNM1",
+  // },
+  // {
+  //   name: "CIT (Web Designing) - MLH",
+  //   url: "https://drive.google.com/file/d/1AK_re7r0VUxKixzOSGxZsxl6J-8vPaWb/view?usp=drive_link",
+  // },
 ];
 
 const skills = {
-  devops: ["AWS", "Digital Ocean", "Vercel", "Netlify"],
   languages: ["JavaScript", "TypeScript"],
-  frameworks: [
-    "React.js",
-    "Next.js",
-    "Node.js",
-    "Express.js",
-    "Tailwind CSS",
-    "React Native",
-    "Expo",
-    "Redux Toolkit",
-    "Zustand",
-    // "Shadcn UI",
-  ],
-  cms: ["Webflow"],
-  nosql: ["MongoDB", "Firebase", "PostgreSQL", "MySQL"],
-  versioncontrol: ["Github", "Bitbucket", "Gitlab"],
+  frameworks: ["React.js", "Next.js", "Node.js", "Express.js", "Expo"],
+  sql: ["PostgreSQL", "MySQL"],
+  nosql: ["MongoDB", "Firebase", "Supabase"],
+  versioncontrol: ["GitHub", "GitLab", "Bitbucket"],
 };
 
 const experiences = [
   {
-    name: "Zenith Flow Tech",
-    date: "July 2024 - Present",
-    designation: "React Native Developer",
+    name: "Zenithflow Tech",
+    date: "February 2026 - Present",
+    designation: "Full Stack Developer",
     list: [
-      "Developed a rabbitry management app for cross-platform, iOS and Android using React Native.",
-      "Implemented data fetching using TanStack Query for efficient state management.",
-      "Designed and managed form schemas with React Hook Form and Zod for robust validation and error handling.",
-      "Worked on a fitness app using Expo, leveraging Expo Router for navigation and EAS services for seamless building and deployment.",
-      "Enabled over-the-air (OTA) updates using Expo's EAS services for quick app improvements.",
+      "Developing and maintaining full-stack web applications using Next.js ensuring scalable and performant solutions.",
+      "Building RESTful APIs and integrating third-party services to support business logic and streamline internal workflows.",
     ],
   },
+  {
+    name: "Bonded",
+    date: "September 2025 - February 2026",
+    designation: "Next.js Developer",
+    list: [
+      "Created Claude code plugins and integrated them with a Next.js dashboard.",
+      "Worked on Mastra AI workflows to develop a website-building automation platform using Next.js and Mastra AI.",
+    ],
+  },
+  {
+    name: "Zenithflow Tech",
+    date: "July 2024 - May 2025",
+    designation: "React Native Developer",
+    list: [
+      "Developed and maintained cross-platform mobile applications using React Native / Expo, delivering seamless user experiences on iOS and Android.",
+      // "Integrated REST APIs and implemented Tanstack Query for efficient data fetching, caching, and state management across mobile apps.",
+      "Leveraged EAS Build/Submit for streamlined CI/CD, deploying apps to Google Play Store and Apple App Store.",
+    ],
+  },
+
   {
     name: "Cubicus.io",
     date: "July 2023 - July 2024",
     designation: "Full Stack Developer",
     list: [
-      "Developed beautiful front-end interfaces using React.js and Next.js.",
-      "Leveraged Next.js for improved SEO performance.",
-      "Built scalable back-end systems using Node.js and Express server.",
-      "Successfully deployed applications on AWS EC2 and Digital Ocean.",
-      "Managed Postgres databases, deploying on various platforms including Neon DB and AWS RDS.",
-      "Applied SSL certification on a backend Node server on an EC2 instance using Caddy and nip.io.",
+      "Built a Next.js dashboard with secure backend API integration, implementing SSR for real-time financial data visualization.",
+      // "Developed interactive cryptocurrency graphs using Chart.js, optimizing performance through memoization for complex data.",
+      "Implemented API rate limiting, JWT authentication, and automated CI/CD pipelines, reducing deployment time by 70%.",
     ],
   },
-
   // {
   //   name: "Freelancing",
   //   date: "March 2023 - Present",
   //   designation: "Freelancer",
-
   //   list: [
-  //     "Designed and implemented custom themes and layouts for clients using Webflow and WordPress Elementor.",
-  //     "Ensured responsive design for optimal viewing across multiple devices.",
-  //     "Utilized Webflow’s rich visual interface to create complex animations and interactions.",
-  //     "Implemented triggers and animations to enhance user experience and engagement.",
-  //     "Used timed animations to control the sequence and timing of animations.",
-  //     "Worked with multi-step animations to create complex, layered effects.",
+  //     "Built an agricultural IoT solution that tracks soil humidity and displays real-time statistics on a Firebase-powered dashboard.",
+  //     "Customized cross-platform applications to client specifications, ensuring intuitive UI/UX and responsive design.",
+  //     "Maintained regular communication with stakeholders to deliver reliable, scalable solutions under tight deadlines.",
   //   ],
   // },
 ];
 
 const projects = [
   {
-    name: "SF Business Solutions",
-    url: "https://sfbusinesssolutions.com",
-    techStack: ["Next.js 14 | ", "Shadcn UI | ", "App Router"],
-    description:
-      "SF Business Solutions provides services like accounting, finance, tax, and bookkeeping. Built with Next.js 14 and Shadcn UI for a professional interface.",
-  },
-  {
-    name: "Nosh NFT",
-    url: "https://noshnft.vercel.app",
-    techStack: ["Next.js | ", "Solidity | ", "Node.js | ", "Express.js"],
-    description:
-      "Nosh NFT is a platform for trading NFTs. Developed using Next.js, Solidity, Node.js, and Express.js to enable NFT creation and transactions.",
-  },
-  {
-    name: "Pixpel.io",
-    url: "https://drive.google.com/file/d/1bstIH9HEFoKuif-Zar26aD6VgCI8Zvir/view?usp=sharing",
-    techStack: ["React Native | ", "Native Base"],
-    description:
-      "Pixpel.io is a web3 gaming and cryptocurrency platform. Built with React Native and Native Base. This project uses Nativewind for styling along with Native Base for UI components.",
-  },
-  {
     name: "Beam Fitness",
-    url: "https://drive.google.com/file/d/1bstIH9HEFoKuif-Zar26aD6VgCI8Zvir/view?usp=sharing",
-    techStack: ["Expo | ", "Tanstack Query | ", "React Hook Form"],
+    url: "https://play.google.com/store/apps/details?id=com.beamfitness.app",
+    techStack: ["React Native"],
     description:
-      "Beam Fitness is an app built with Expo, Gorhom BottomSheets, and robust form/data handling via React Hook Form and TanStack Query.",
+      "Built the Beam Fitness app with Expo, Gorhom Bottom Sheets, React Hook Form, and Tanstack Query.",
   },
   // {
-  //   name: "ADHD Coach",
+  //   name: "SF Business Solutions",
   //   url: "https://github.com/qureshikaif/adhd-coach-native",
-  //   techStack: ["React Native | ", "Node.js | ", "Express.js"],
+  //   techStack: ["Next.js"],
   //   description:
-  //     "ADHD Coach is a productivity app for individuals with ADHD. Developed with React Native, Node.js, and Express.js to help manage tasks effectively.",
+  //     "SF Business Solutions is a website built with Next.js using App Router and Shadcn UI library for a consultancy firm.",
   // },
+  {
+    name: "Pixpel.io",
+    url: "https://www.pixpel.io",
+    techStack: ["Next.js & React Native"],
+    description:
+      "Pixpel.io includes a Next.js web dashboard and React Native mobile app with JWT authentication and a modular architecture.",
+  },
+  {
+    name: "MuzzGen",
+    url: "https://play.google.com/store/apps/details?id=com.MuzzGen",
+    techStack: ["React Native"],
+    description: "",
+  },
+  {
+    name: "SF Business Solutions",
+    url: "https://sfbusinesssolutions.com",
+    techStack: ["Next.js"],
+    description: "",
+  },
+  {
+    name: "MHRM Traders",
+    url: "https://mhrm-traders-website.vercel.app",
+    techStack: ["Next.js"],
+    description: "",
+  },
+  {
+    name: "Launchieve",
+    url: "https://launchieve.com",
+    techStack: ["Next.js"],
+    description: "",
+  },
 ];
+
+const additionalInfo = {
+  languages: "Urdu (native); English (fluent).",
+  certifications:
+    "Meta Front-End Developer - Coursera, Web Development - Malaysian Learning Hub.",
+  achievements:
+    "Winner of 'Code in the Dark' in an inter-university competition. Top 10 finalist in Coder's Clash hackathon.",
+  openSource:
+    "Added a new feature to a popular Sleep Tracker mobile app. https://vmiklos.hu/plees-tracker/",
+};
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <section className="bg-gray-100 p-10 min-h-screen w-1/2 m-10 rounded-xl print:w-full print:m-0">
-        <div className="flex justify-between items-center">
-          <div className="flex flex-col w-full">
-            <div className="flex justify-between w-full">
-              <h1 className="text-3xl font-bold">Muhammad Kaif Qureshi</h1>
+    <main className="flex min-h-screen items-center justify-center bg-white">
+      <section className="bg-white p-12 min-h-screen max-w-4xl w-full print:w-full print:m-0">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-black text-gray-700 tracking-wide mb-4">
+            MUHAMMAD KAIF QURESHI
+          </h1>
+
+          {/* Social Links */}
+          <div className="flex justify-center mb-4 space-x-4">
+            <div className="flex items-center space-x-1">
+              <PiPhone className="w-4 h-4 text-gray-600" />
+              <span className="text-sm text-gray-700">+923182345206</span>
             </div>
-            <h2 className="text-xl font-light">Software Developer</h2>
+            <div className="flex items-center space-x-1">
+              <MdOutlineMail className="w-4 h-4 text-gray-600" />
+              <span className="text-sm text-gray-700">
+                kaifqureshi.dev@gmail.com
+              </span>
+            </div>
+            <div className="flex items-center space-x-1">
+              <PiLinkedinLogo className="w-4 h-4 text-gray-600" />
+              <Link
+                href="https://linkedin.com/in/mohammad-kaif-qureshi-77052a1a5/"
+                target="_blank"
+                className="text-sm text-gray-700 hover:text-blue-600"
+              >
+                linkedin.com/in/mohammad-kaif-qureshi-77052a1a5/
+              </Link>
+            </div>
           </div>
         </div>
-        <Divider className="my-4 h-[1px]" />
-        <div className="flex justify-between">
-          {linksicon.map((link, index) => (
-            <div
-              className="flex flex-row space-x-2 items-center justify-between"
-              key={index}
-            >
-              <link.icon className="w-5 h-5" />
-              <div className="flex items-center flex-grow space-x-2">
-                <Link className="text-xs" href={link.url} target="_blank">
-                  {link.value}
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-        <Divider className="my-4 h-[1px]" />
-        <div className="flex space-x-4">
-          <div className="w-1/3 h-full mt-2">
-            <div className="space-y-1 py-1">
-              <h1 className="uppercase text-sm font-semibold">Summary</h1>
-              <p className="text-xs">
-                Experienced full-stack software developer with a good track
-                record of addressing complex business requirements and
-                overcoming challenges to deliver polished and user-friendly
-                software solutions.
-              </p>
-            </div>
-            <Divider className="my-3 h-[0.5px] bg-gray-400" />
 
-            <h1 className="uppercase text-sm font-semibold">Education</h1>
-            {education.map((edu, index) => (
-              <div className="space-y-4 py-1" key={index}>
+        {/* Horizontal Line */}
+        <div className="w-full h-px bg-gray-300 mb-3"></div>
+
+        {/* Two Column Layout */}
+        <div className="grid grid-cols-12 gap-8">
+          {/* Left Column */}
+          <div className="col-span-4 space-y-8">
+            {/* Skills */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide mb-2">
+                SKILLS
+              </h3>
+              <div className="border-b border-gray-300 mb-3"></div>
+              <div className="space-y-3">
                 <div>
-                  <h1 className="text-xs font-semibold">{edu.name}</h1>
-                  <p className="text-xsm">
-                    {edu.date} | {edu.degree}
+                  <p className="text-sm font-semibold text-gray-800">
+                    Frameworks:
                   </p>
-                  {/* <ul className="text-xs list-disc my-0.5">
-                    <li className="flex space-x-2 text-xsm">
-                      <span className="font-semibold mr-1">{edu.titleOne}</span>
-                      {edu.titleOneValue}
-                    </li>
-                  </ul> */}
-                  {/* <ul className="text-xs list-disc my-0.5">
-                    <li className="flex space-x-2 text-xsm">
-                      <span className="font-semibold mr-1">{edu.titleTwo}</span>
-                      {edu.titleTwoValue}
-                    </li>
-                  </ul> */}
-                  {/* {index !== education.length - 1 && (
-                    <Divider className="my-2 h-[1px]" />
-                  )} */}
+                  <p className="text-sm text-gray-700">
+                    {skills.frameworks.join(", ")}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Languages:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {skills.languages.join(", ")}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Version Control:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {skills.versioncontrol.join(", ")}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Database:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {[...skills.sql, ...skills.nosql].join(", ")}
+                  </p>
                 </div>
               </div>
-            ))}
-            <Divider className="my-3 h-[0.5px] bg-gray-400" />
-            <div className="py-1">
-              <h1 className="uppercase text-sm font-semibold">
-                Certifications
-              </h1>
-              <ul className="list-disc pl-5 space-y-1 mt-2 mb-1">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-center space-x-2">
-                    <li className="text-xs">
-                      <Link href={cert.url}>{cert.name}</Link>
-                    </li>
+            </div>
+
+            {/* Education */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide mb-2">
+                EDUCATION
+              </h3>
+              <div className="border-b border-gray-300 mb-3"></div>
+              <div className="space-y-4">
+                {education.map((edu, index) => (
+                  <div key={index}>
+                    <h4 className="text-sm font-semibold text-gray-800 mb-1">
+                      {edu.name.toUpperCase()}
+                    </h4>
+                    <p className="text-sm text-gray-700 mb-1">{edu.degree}</p>
+                    <p className="text-sm text-gray-700 mb-1">
+                      {edu.titleOne} {edu.titleOneValue}
+                    </p>
                   </div>
                 ))}
-              </ul>
+              </div>
             </div>
-            <Divider className="my-3 h-[0.5px] bg-gray-400" />
+
+            {/* Additional */}
             <div>
-              <h1 className="uppercase text-sm font-semibold my-2">Skills</h1>
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">Languages</h2>
-                <ul className="flex gap-y-2 flex-wrap list-disc ps-5 gap-x-5 mt-2">
-                  {skills.languages.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">Framework/Libraries</h2>
-                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
-                  {skills.frameworks.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {/* <div className="mb-4">
-                <h2 className="text-xs font-semibold">DevOps</h2>
-                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
-                  {skills.devops.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div> */}
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">CMS/Website Builders</h2>
-                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
-                  {skills.cms.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">Database</h2>
-                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
-                  {skills.nosql.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2 className="text-xs font-semibold">Version Control</h2>
-                <ul className="flex gap-y-2 gap-x-5 flex-wrap list-disc ps-5 mt-2">
-                  {skills.versioncontrol.map((skill, index) => (
-                    <li className="text-xs" key={index}>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide mb-2">
+                ADDITIONAL
+              </h3>
+              <div className="border-b border-gray-300 mb-3"></div>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Languages:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {additionalInfo.languages}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Certifications:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {additionalInfo.certifications}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Achievements:
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    {additionalInfo.achievements}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">
+                    Open-source contribution:
+                  </p>
+                  <p className="text-sm text-gray-700 break-words">
+                    Added a new feature to a popular Sleep Tracker mobile app.{" "}
+                    <Link
+                      href="https://vmiklos.hu/plees-tracker/"
+                      target="_blank"
+                      className="text-gray-700 hover:text-gray-900 underline"
+                    >
+                      https://vmiklos.hu/plees-tracker/
+                    </Link>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="w-2/3 h-full mt-2 px-3">
-            <h1 className="uppercase font-semibold text-sm">Experience</h1>
-            {experiences.map((experience, index) => (
-              <div key={index} className="my-1">
-                <div>
-                  <h1 className="text-xs font-semibold">{experience.name}</h1>
-                  <p className="text-[0.7rem] mb-1">
-                    {experience.date} | {experience.designation}
-                  </p>
-                </div>
-                <ul className="text-xs list-disc pl-7">
-                  {experience.list.map((list, index) => (
-                    <li key={index} className="mb-[0.15rem]">
-                      {list}
-                    </li>
-                  ))}
-                </ul>
-                <div className="h-2"></div>
-              </div>
-            ))}
+
+          {/* Right Column */}
+          <div className="col-span-8 space-y-8">
+            {/* Experience */}
             <div>
-              <div>
-                <h1 className="font-semibold text-sm mb-2 mt-3">PROJECTS</h1>
-                {/* <h2 className="text-sm font-semibold mt-2">Web Apps</h2> */}
-                <ul className="list-disc pl-7 space-y-1">
-                  {projects.map((project, index) => (
-                    <div key={index}>
-                      <li className="text-xs">
-                        <p className="flex items-center font-semibold">
-                          {project.name}
-                          {/* <Link
-                            href={project.url}
-                            target="_blank"
-                            className="ml-2"
-                          >
-                            <FaExternalLinkAlt href={project.url} size={10} />
-                          </Link> */}
-                        </p>
-                        <div className="flex">
-                          {project.techStack.map((tech, idx) => (
-                            <p key={idx} className="text-xsm mb-1">
-                              {tech}&nbsp;
-                            </p>
-                          ))}
-                        </div>
-                        <p className="text-xs">{project.description}</p>
-                      </li>
-                      <div className="h-2"></div>
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide mb-2">
+                EXPERIENCE
+              </h3>
+              <div className="border-b border-gray-300 mb-3"></div>
+              <div className="space-y-6">
+                {experiences.map((experience, index) => (
+                  <div key={index}>
+                    <h4 className="text-sm font-semibold text-gray-800 mb-1">
+                      {experience.name.toUpperCase()} - Karachi, Pakistan
+                    </h4>
+                    <div className="flex justify-between items-center mb-2">
+                      <p className="text-sm text-gray-700 italic">
+                        {experience.designation}
+                      </p>
+                      <p className="text-sm text-gray-700">{experience.date}</p>
                     </div>
-                  ))}
-                </ul>
-                {/* <h2 className="text-sm font-semibold mt-4">Mobile Apps</h2> */}
-                {/* <ul className="list-disc pl-7 space-y-1">
-                  {mobileProjects.map((project, index) => (
-                    <div key={index}>
-                      <li className="text-xs">
-                        <p className="flex items-center font-medium">
+                    <ul className="text-sm text-gray-700 leading-relaxed list-disc pl-5 space-y-1">
+                      {experience.list.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Projects */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 tracking-wide mb-2">
+                PROJECTS
+              </h3>
+              <div className="border-b border-gray-300 mb-3"></div>
+              <div className="grid grid-cols-2 gap-x-6 gap-y-1">
+                {projects.map((project, index) => (
+                  <div key={index}>
+                    <h4 className="text-sm text-gray-800 mb-1">
+                      {project.url ? (
+                        <Link
+                          href={project.url}
+                          target="_blank"
+                          className="hover:text-blue-600"
+                        >
                           {project.name}
-                          <Link href={project.url} className="ml-2">
-                            <FaExternalLinkAlt href={project.url} size={10} />
-                          </Link>
-                        </p>
-                        <div className="flex">
-                          {project.techStack.map((tech, idx) => (
-                            <p key={idx} className="text-xsm mb-1">
-                              {tech}&nbsp;|&nbsp;
-                            </p>
-                          ))}
-                        </div>
-                        <p className="text-xs">{project.description}</p>
-                      </li>
-                      <div className="h-2"></div>
-                    </div>
-                  ))}
-                </ul> */}
+                        </Link>
+                      ) : (
+                        project.name
+                      )}{" "}
+                      - {project.techStack[0]}
+                    </h4>
+                    {/* <p className="text-sm text-gray-700">
+                      {project.description}
+                    </p> */}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
