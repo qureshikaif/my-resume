@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Lora } from "next/font/google";
 import "./globals.css";
 
-const lato = Lato({
-  weight: ["100", "300", "400", "700", "900"],
+const lora = Lora({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lato.className}>{children}</body>
+      <body className={lora.className}>{children}</body>
     </html>
   );
 }

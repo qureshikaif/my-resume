@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ---- Print / PDF setup (ATS-friendly, single column) ---- */
+/* NOTE: do not set `size` here — declaring an explicit page size makes
+   Chrome lock and hide the Scale + Paper size options in the print dialog. */
+@page {
+  margin: 14mm 16mm;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff;
+  }
+
+  /* Single continuous flow — content breaks naturally across pages */
+  .resume {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  /* Keep section headings attached to the content that follows */
+  h2 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Avoid splitting an entry across two pages */
+  .avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
